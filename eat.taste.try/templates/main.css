@@ -132,7 +132,7 @@ nav ul li a:hover {
     font-size: 1rem;
     text-align:center;
     font-weight: 600;
-    padding: 0 4rem;
+    padding: 0 10rem 0 10rem;
     margin-top: 1rem;
     line-height: 1.9;
     opacity: 0.7;
@@ -163,7 +163,7 @@ nav ul li a:hover {
 }
 
 .fa-arrow-down {
-    margin: 2rem 38rem;
+    margin: 2.1rem 39rem;
     color: white;         
     animation: move 2s infinite alternate;
 }
