@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
@@ -27,6 +28,12 @@ html {
 }
 
 
+body {
+	background: rgb(19, 17, 17);
+	overflow-x: hidden;
+	height: 100vh;
+}
+
 :root {
 	
 	--font-size-big: 6rem;
@@ -36,11 +43,6 @@ html {
     --font-size-verysmall: 1.2rem;
 }
 
-body {
-	background: rgb(19, 17, 17);
-	overflow-x: hidden;
-	height: 100vh;
-}
 
 
 /* Page loader */
@@ -64,7 +66,6 @@ body {
 	color: rgb(229, 9, 20);
 	font-size: 70px;
 	margin-top: 14rem;
-	display: block;
 }
 .loader .loading-img {
 	width: 100px;
@@ -80,16 +81,11 @@ body {
 	animation-fill-mode: forwards;
 }
 
-
 @keyframes fadeOut {
 	100% {
 			opacity: 0;
 			visibility: hidden;
 	}
-}
-
-.fas {
-	color: white;
 }
 
 .grow { 
@@ -109,6 +105,12 @@ cursor: pointer;
     }
 
 
+.fas {
+	color: white;
+}
+
+
+
 /*Home*/
 
 .navbar {
@@ -117,9 +119,9 @@ cursor: pointer;
 
 }
 
-#mainNavbar .navbar-brand {
-	color: #3a1518;
 
+#mainNavbar .navbar-brand {
+	color: #3a1518
  
 }
 .nlogo {
@@ -133,17 +135,26 @@ cursor: pointer;
 	
 }
 
+
 .nav-link {
 	color: white !important;
+	font-size: 14px;
+}
+.sign-log {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	margin-top: 0.7rem;
+
+
+}
+
+.switch {
+	margin-right: 0.8rem;
+	text-transform: uppercase;
 	font-size: var(--font-size-small);
-}
-
-.nav-item {
-	margin-right: 1rem;
-}
-
-.navbar-toggler {
-	background: #fff!important;
+	color: #fff;
 }
 
 .btn-light {
@@ -153,15 +164,6 @@ cursor: pointer;
 }
 
 
-.sign-log {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	list-style: none;
-	margin-top: 0.7rem;
-
-
-}
 .sign-log a {
 	text-decoration: none;
 	color: var(--grey);
@@ -173,6 +175,10 @@ cursor: pointer;
 	text-decoration: none;
 
 }
+#intro {
+	height: 100%;
+	width: 100%;
+}
 
 .search  {
 	color: #fff;
@@ -180,7 +186,6 @@ cursor: pointer;
 }
 .notification-bell {
 	margin-right: 3rem;
-	
 }
 
 .icon-profile {
@@ -188,13 +193,6 @@ cursor: pointer;
 	opacity: 1;
 	margin-right: 2rem;
 }
-.switch {
-	margin-right: 0.8rem;
-	text-transform: uppercase;
-	font-size: var(--font-size-small);
-	color: #fff;
-}
-
 
 .navbar.scrolled {
 	background: rgb(19, 17, 17);
@@ -202,24 +200,15 @@ cursor: pointer;
 	opacity: 0.95;
 }
 
-
-/*FRONT PAGE */
 .front-page-container {
 	position: relative;
 	height: 100vh!important;
 	width: 100%!important;
-	background: url("../imgs/arkangel.jpg");
+	background: url("../imgs/alwaysbig2.jpg");
 	background-position: center;
 	background-size: cover;
 	padding: 10rem;
 	
-}
-
-.container-2 {
-	background: url("../imgs/alwaysbig2.jpg");
-	background-position: center;
-	background-size: cover;
-
 }
 
 .content {
@@ -234,37 +223,27 @@ cursor: pointer;
 	opacity: 0.8;
 	color:#fff;
 	display: block;
+	margin-left: 8rem;
 	text-shadow: 0 2rem 3rem rgba(0,0,0,0.4);
 	font-size: var(--font-size-big);
-
 				
 }
 
-.header2 {
-	margin-left: 6rem;
-}
 .subheader {
-	text-transform: uppercase;
-	font-size: var(--font-size-mediumbig);
-	margin-left: 10rem;
-
+	margin-left: 8rem;
+	display: block;
+	font-size: var(--font-size-big);
 }
-
-.subheader2 {
-	margin-left: 14rem;
-}
-
 
 
 .front-page__button-container {
-	margin-left: 3rem;
-	margin-top: 3rem;
+	margin-left: 4.5rem;
 	display: block;
 }
 .front-page-button {
-	border-radius: 3px !important;
+	border-radius: 0 !important;
 	width: 14rem;
-	padding: 1rem;
+	padding: 2rem;
 	background: rgb(92, 83, 83, 0.4);
 	border: none;
 	color: #ffffff;
@@ -274,26 +253,47 @@ cursor: pointer;
 
 }
 
-.front-page-button:hover {
-	color:black;
-	background: #FFF;
+
+
+
+.title1 {
+text-transform: uppercase;
+	margin-top: 30px;
+	padding: 20px;
+	opacity: 0.8;
+	font-size: var(--font-size-small);
 }
 
-.fa-play:hover {
-	color:black!important;
-
-
-}
-.fa-plus:hover {
-	color: rgb(92, 83, 83, 0.4);
+.title2 {
+	margin-top: -25px;
+	padding: 20px;
+	opacity: 0.8;
+	font-size: var(--font-size-mediumbig);
 }
 
-.popular {
-	padding: 2rem;
+.title3 {
+	margin-top: -1px;
+	padding: 20px;
+	opacity: 0.7;
+	font-size: 15px;
 }
 
 .watch	{
 	width: 100%;
+}
+.card-container1 {
+	
+	padding-top: 40px;
+	margin-top: 40px;
+	padding: 20px;
+	margin-top: 20px; 	 	
+}
+
+
+
+.popular {
+	padding: 2rem;
+	font-size: var(--font-size-medium);
 }
 
 .new-releases {
@@ -305,7 +305,6 @@ cursor: pointer;
 #card-text {
 	font-size: 2em;
 }
-
 
 .card-img-top {
 	width: 100%;
@@ -319,7 +318,7 @@ cursor: pointer;
 }
 h1 {
 	font-weight: 700;
-	font-size: 5em;
+	font-size: var(--font-size-medium);
 }
 
 hr	{
@@ -340,7 +339,6 @@ hr	{
 		padding: 2rem;
 		font-size: var(--font-size-small);
 
-
 	}
 
 
@@ -349,88 +347,33 @@ hr	{
 		margin: 0;
 		padding: 0;
 	}
-
-	.container-trending {
-		padding: 3rem;
-
-	}
-
-	.trending-text {
-		position: relative;
-		padding: 0;
-	
-	}
 	
 	.container-trending1 {
-		background: url("../imgs/revenantback-dark.jpg") no-repeat center center/cover;
-				
-	}
-
-	.container-trending2 {
-		background: url("../imgs/breakingback-dark.jpg") no-repeat center center/cover;
-	}
-
-	.container-trending3 {
-		background: url("../imgs/silenceback-dark.jpg") no-repeat center center/cover;
-
-	}
-
-	.container-trending4 {
 		padding: 3rem;
         background: url("../imgs/loveback-dark.jpg") no-repeat center center/cover;
 
 	}
 
-	.container-trending5 {
+	.container-trending2 {
 		padding: 3rem;
 		background: url("../imgs/whatifback-dark.jpg	") no-repeat center center/cover;
 	}
 
-	.container-trending6 {
+	.container-trending3 {
 		padding: 3rem;
 		background: url("../imgs/houseback-dark.jpg") no-repeat center center/cover;
 
 	}
-	.title1 {
-		text-transform: uppercase;
-			margin-top: 30px;
-			padding: 20px;
-			opacity: 0.8;
-			font-size: var(--font-size-small);
-		}
-		
-		.title2 {
-			margin-top: -25px;
-			padding: 20px;
-			opacity: 0.8;
-			font-size: var(--font-size-mediumbig);
-		}
-
-		.title3 {
-			margin-top: -1px;
-			padding: 20px;
-			opacity: 0.7;
-			font-size: var(--font-size-small);
-		}
 	
-	.trending-box {
-		position: absolute;
-		top: 57%;
-		left: 33%;
-		transform: translate(-27%,-80%);
+	.row-icons {
+		text-align: center;
 	}
-	
+
 
 
 	.icon-container {
 		padding: 7rem 7rem 7rem 6rem;
 		}
-
-	.row-icons {
-
-		text-align: center;
-		}
-	
 
 	.icon-front {
 		width: 25%;
@@ -442,20 +385,14 @@ hr	{
 		margin-top: 30px;
 		margin-bottom: 18px;
 		opacity: 0.8;
-		font-size: var(--font-size-medium);
 
 	}
 
 	
 
-	.icon-text-box {
-		padding: 2rem;
-	}
 	.icon-description {
 		line-height: 1.5;
 		opacity: 0.7;
-		font-size: var(--font-size-small);
-
 	}
 
 	.yellow-container {
@@ -472,10 +409,7 @@ hr	{
 		margin-left: 1.4rem;
 		font-size: var(--font-size-medium);
 	}
-
 	
-	
-		
 		.img-car {
 		width: 115%;
 		padding: 0;
@@ -585,108 +519,14 @@ hr	{
 		.followus {
 			text-transform: uppercase;
 		}
-
-		@media(max-width: 1024px) {
-
-			.front-page-container {
-				height: 50vh!important;
-			}
-
-			.content {
-				margin-left: 5rem;
-			}
-
-			.trending-box {
-				margin-top:4rem;
-			}
-
-		} 
 		@media(max-width: 950px) {
 
-
 			.newreleases {
-				padding: 3rem;
+				padding: 1rem;
 				margin: 4px;
 			}
 
-			.icon-front {
-				width: 10%;
-			}
-		}
-		@media(max-width: 768px) {
-
-			.sign-log {
-				flex-direction: column;
-				justify-content: flex-start;
-				margin-right: 91rem;
-			}
-
-			.front-page-container {
-				height: 50vh !important;
-			}
-
-			.header1 {
-				margin-left: 1rem;
-				font-size: 50px;	
-			}
-
-			.content {
-				text-align: center;
-				align-items: center;
-			}
-			.subheader {
-				font-size: 30px;
-				margin-left: 6rem;
-			}
-
-			.front-page__button-container {
-				margin-left: -2rem;
-			}
 			
-
-			
-			
-		}
-		@media(max-width: 500px) {
-
-
-			.navbar-toggler {
-				margin-right: 5rem!important;
-			}
-			
-			.front-page-container {
-				height: 60vh!important;
-			}
-			.content {
-				padding: 0 auto;
-				margin: 0 0 0 15rem;
-				text-align:center;
-				justify-content: center;
-
-			
-			}
-
-			.content h1 {
-				font-size: 30px;
-				display: block;
-			}
-
-			.subheader {
-				font-size: 20px;
-			}
-
-			.front-page-button {
-				margin-top: 0.5rem;
-			}
-
-			.front-page__button-container {
-				display: flex;
-				justify-content: center;
-			}
-
-			.popular {
-				padding: 5rem;
-			}
 			.wrapper2 {
 				display: grid !important;
 				grid-template-columns: 1fr !important;
@@ -695,14 +535,52 @@ hr	{
 			.wrapper2 img {
 				width: 100%;
 			}
+
+			
+
+			.icon-front {
+				width: 10%;
+			}
+		}
+		@media(min-width: 768) {
+
+			.view {
+				height: 50vh !important;
+			}
+
+			
+			
+		}
+		@media(max-width: 500px) {
+
+			
+			.content {
+				padding: 1rem 3rem 1rem 4rem;
+				margin-top: 15rem;
+			}
+
+			.content .front-page-header1 {
+				font-size: 20px;	
+				margin: auto;			
+			}
+
+			.be-my {
+				margin: 0 1.1rem 0 1.5rem;
+			}
+
+			.content .front-page-header2 {
+				font-size: 35px;
+				margin: auto auto;	
+			}
+
+			.front-page-button {
+				margin-top: 0.6rem;
+				margin-left: 1rem;
+				margin-right: 1rem;
+			}
 			
 			.new-releases {
 				text-align: center;
-			}
-
-			.trending-box {
-				position: relative;
-				padding: 2rem 8rem 4rem 5rem;
 			}
 			
 			.container-trending1 {
@@ -720,16 +598,14 @@ hr	{
 
 			}
 
-
 		.icon-container {
-			padding: 5rem!important;
+			padding: 2rem!important;
 		}
 
 		.icon-front {
-			width: 23%;
+			width: 28%;
 		
 		}
 		}
 
-		
 		

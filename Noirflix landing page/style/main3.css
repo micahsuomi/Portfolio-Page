@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
@@ -27,6 +28,13 @@ html {
 }
 
 
+
+body {
+	background: #ffffff;
+	overflow-x: hidden;
+	height: 100vh;
+}
+
 :root {
 	
 	--font-size-big: 6rem;
@@ -34,12 +42,6 @@ html {
     --font-size-medium: 2rem;
     --font-size-small: 1.6rem;
     --font-size-verysmall: 1.2rem;
-}
-
-body {
-	background: rgb(19, 17, 17);
-	overflow-x: hidden;
-	height: 100vh;
 }
 
 
@@ -52,7 +54,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background:  rgb(19, 17, 17);
+	background:  rgb(255, 255, 255);
 	display: grid;
 	justify-content: center;
 	align-items: center;
@@ -61,14 +63,13 @@ body {
 }
 
 .loader > h1 {
-	color: rgb(229, 9, 20);
+	color: rgb(184, 99, 99);
 	font-size: 70px;
-	margin-top: 14rem;
-	display: block;
+	margin-top: 10rem;
 }
 .loader .loading-img {
 	width: 100px;
-	margin: -6rem auto auto auto;
+	margin: -6.3rem auto auto auto;
 }
 
 .loader .nflix-logo {
@@ -101,8 +102,9 @@ body {
      }
 
 .grow2 { 
-    transition: all .2s ease-in-out;
-cursor: pointer;
+    transition: right .2s ease-in-out;
+	cursor: pointer;
+	
  }
 .grow2:hover {
      transform: scale(2.1); 
@@ -112,115 +114,142 @@ cursor: pointer;
 /*Home*/
 
 .navbar {
-	height: 7rem;
-	padding: 3rem;
-
+	display: flex;
+	align-items: center;
 }
-
-#mainNavbar .navbar-brand {
-	color: #3a1518;
-
- 
+.navbar-dark {
+	background-color: none;
+	align-items: center;
+	display:flex;
+	
 }
 .nlogo {
 	width: 43%;
 }
 
-.navbar-brand2 {
+.noir-kids {
+    color: rgb(196, 56, 56);
+}
+
+
+.navbar-nav {
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
-	
 }
 
-.nav-link {
-	color: white !important;
-	font-size: var(--font-size-small);
-}
-
-.nav-item {
-	margin-right: 1rem;
-}
-
-.navbar-toggler {
-	background: #fff!important;
-}
-
-.btn-light {
-	margin: 0.2rem;
-	background: rgb(90, 82, 82, 0.5);
-	color: white;
-}
-
-
-.sign-log {
+.navbar-nav-2 {
 	display: flex;
-	justify-content: flex-end;
-	align-items: center;
 	list-style: none;
-	margin-top: 0.7rem;
-
-
-}
-.sign-log a {
-	text-decoration: none;
-	color: var(--grey);
-	opacity: 0.7;
-}
-
-.sign-log a:hover {
-	color: white;
-	text-decoration: none;
-
-}
-
-.search  {
-	color: #fff;
+	align-items: center;
 	margin-right: 3rem;
+	padding: 16px;
 }
-.notification-bell {
-	margin-right: 3rem;
-	
+
+.nav-link1 {
+	color: rgb(221, 37, 37) !important;
+    font-size: var(--font-size-small);
+    font-weight: 600;
+	padding-left: -2rem;
+	padding-top: 1rem;
 }
+
+.nav-link2 {
+	color: rgb(19, 17, 17) !important;
+	font-size: var(--font-size-small);
+    margin-right: 2rem!important;
+    font-weight: 600;
+	padding-left: 2rem;
+
+}
+
+.search {
+	display: flex;
+	align-items: center;
+}
+
+.fa-search {
+	color: black;
+}
+.search-text {
+	font-size: var(--font-size-small);
+	padding-top: 0.9rem;
+	margin-left: .5rem;
+	margin-right: 1rem;
+	font-weight: 600;
+
+}
+
+
 
 .icon-profile {
 	width: 40%;
 	opacity: 1;
+}
+
+.switch {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	margin-right: 1rem;
+	
+}
+
+.notification-bell {
 	margin-right: 2rem;
 }
-.switch {
-	margin-right: 0.8rem;
-	text-transform: uppercase;
-	font-size: var(--font-size-small);
-	color: #fff;
+
+.fa-bell {
+	color: black;
+
 }
 
 
+.switch:hover,
+.switch:visited,
+.switch:active {
+	color: white;
+	text-decoration: none;
+	outline: none;
+}
+
+.btn-exit {
+    background: rgb(233, 20, 20);
+    padding: 0.8rem;
+    color: white;
+    border: none;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.btn-exit:hover {
+	background: rgb(206, 24, 24);
+	color: #fff;
+}
+#intro {
+	height: 100%;
+	width: 100%;
+}
 .navbar.scrolled {
-	background: rgb(19, 17, 17);
+	background: #ffffff;
 	transition: background 500ms;
 	opacity: 0.95;
 }
 
-
-/*FRONT PAGE */
-.front-page-container {
-	position: relative;
-	height: 100vh!important;
-	width: 100%!important;
-	background: url("../imgs/arkangel.jpg");
-	background-position: center;
-	background-size: cover;
-	padding: 10rem;
-	
+.navbar.scrolled .switch {
+	color: rgb(19, 17, 17);
 }
 
-.container-2 {
-	background: url("../imgs/alwaysbig2.jpg");
-	background-position: center;
-	background-size: cover;
-
+.navbar.scrolled .search {
+	color: rgb(19, 17, 17)
 }
+
+ .navbar-toggler-icon {
+	background-color: rgb(107, 101, 101);
+}
+
+
+/*Front-page*/
 
 .content {
 	position: absolute;
@@ -229,6 +258,18 @@ cursor: pointer;
 	transform: translate(-60%,50%);
 	
 }
+
+.front-page-container {
+	position: relative;
+	height: 100vh!important;
+	width: 100%!important;
+	background: url("../imgs/yohoo.jpg");
+	background-position: center;
+	background-size: cover;
+	padding: 10rem;
+	
+}
+
 
 .front-page-header {
 	opacity: 0.8;
@@ -240,9 +281,6 @@ cursor: pointer;
 				
 }
 
-.header2 {
-	margin-left: 6rem;
-}
 .subheader {
 	text-transform: uppercase;
 	font-size: var(--font-size-mediumbig);
@@ -250,19 +288,14 @@ cursor: pointer;
 
 }
 
-.subheader2 {
-	margin-left: 14rem;
-}
-
-
 
 .front-page__button-container {
 	margin-left: 3rem;
-	margin-top: 3rem;
+	margin-top: 2rem;
 	display: block;
 }
 .front-page-button {
-	border-radius: 3px !important;
+	border-radius: 0 !important;
 	width: 14rem;
 	padding: 1rem;
 	background: rgb(92, 83, 83, 0.4);
@@ -274,26 +307,48 @@ cursor: pointer;
 
 }
 
-.front-page-button:hover {
-	color:black;
-	background: #FFF;
+
+.title1 {
+text-transform: uppercase;
+	margin-top: 30px;
+	padding: 20px;
+	opacity: 0.8;
+	font-size: var(--font-size-small);
+
 }
 
-.fa-play:hover {
-	color:black!important;
-
+.title2 {
+	margin-top: -25px;
+	padding: 20px;
+	opacity: 0.8;
+	font-size: var(--font-size-mediumbig);
 
 }
-.fa-plus:hover {
-	color: rgb(92, 83, 83, 0.4);
-}
 
-.popular {
-	padding: 2rem;
+.title3 {
+	margin-top: -1px;
+	padding: 20px;
+	opacity: 0.7;
+	font-size: 15px;
 }
 
 .watch	{
 	width: 100%;
+}
+.card-container1 {
+	
+	padding-top: 40px;
+	margin-top: 40px;
+	padding: 20px;
+	margin-top: 20px; 	 	
+}
+
+
+
+
+
+.popular {
+	padding: 8rem;
 }
 
 .new-releases {
@@ -305,6 +360,7 @@ cursor: pointer;
 #card-text {
 	font-size: 2em;
 }
+
 
 
 .card-img-top {
@@ -340,7 +396,6 @@ hr	{
 		padding: 2rem;
 		font-size: var(--font-size-small);
 
-
 	}
 
 
@@ -349,88 +404,33 @@ hr	{
 		margin: 0;
 		padding: 0;
 	}
-
-	.container-trending {
-		padding: 3rem;
-
-	}
-
-	.trending-text {
-		position: relative;
-		padding: 0;
-	
-	}
 	
 	.container-trending1 {
-		background: url("../imgs/revenantback-dark.jpg") no-repeat center center/cover;
+		padding: 3rem;
+		background: url("../imgs/trueback-dark.jpg") no-repeat center center/cover;
 				
 	}
 
 	.container-trending2 {
-		background: url("../imgs/breakingback-dark.jpg") no-repeat center center/cover;
+		padding: 3rem;
+		background: url("../imgs/monsterback-dark.jpg") no-repeat center center/cover;
 	}
 
 	.container-trending3 {
-		background: url("../imgs/silenceback-dark.jpg") no-repeat center center/cover;
-
-	}
-
-	.container-trending4 {
 		padding: 3rem;
-        background: url("../imgs/loveback-dark.jpg") no-repeat center center/cover;
+		background: url("../imgs/Kazoopsback-dark.jpg") no-repeat center center/cover;
 
-	}
-
-	.container-trending5 {
-		padding: 3rem;
-		background: url("../imgs/whatifback-dark.jpg	") no-repeat center center/cover;
-	}
-
-	.container-trending6 {
-		padding: 3rem;
-		background: url("../imgs/houseback-dark.jpg") no-repeat center center/cover;
-
-	}
-	.title1 {
-		text-transform: uppercase;
-			margin-top: 30px;
-			padding: 20px;
-			opacity: 0.8;
-			font-size: var(--font-size-small);
-		}
-		
-		.title2 {
-			margin-top: -25px;
-			padding: 20px;
-			opacity: 0.8;
-			font-size: var(--font-size-mediumbig);
-		}
-
-		.title3 {
-			margin-top: -1px;
-			padding: 20px;
-			opacity: 0.7;
-			font-size: var(--font-size-small);
-		}
-	
-	.trending-box {
-		position: absolute;
-		top: 57%;
-		left: 33%;
-		transform: translate(-27%,-80%);
 	}
 	
+	.row-icons {
+		text-align: center;
+	}
+
 
 
 	.icon-container {
 		padding: 7rem 7rem 7rem 6rem;
 		}
-
-	.row-icons {
-
-		text-align: center;
-		}
-	
 
 	.icon-front {
 		width: 25%;
@@ -438,19 +438,29 @@ hr	{
 		margin-top: 40px;
 	}
 
+	.icon-front2 {
+		width: 31%;
+		opacity: 0.8;
+		margin-top: 40px;
+	}
+
+	.icon-front3 {
+		width: 37%;
+		
+		opacity: 0.7;
+		margin-top: 40px;
+	}
 	.icon-header {
 		margin-top: 30px;
 		margin-bottom: 18px;
 		opacity: 0.8;
 		font-size: var(--font-size-medium);
 
+
 	}
 
 	
 
-	.icon-text-box {
-		padding: 2rem;
-	}
 	.icon-description {
 		line-height: 1.5;
 		opacity: 0.7;
@@ -459,7 +469,7 @@ hr	{
 	}
 
 	.yellow-container {
-		background: rgb(19, 17, 17);
+		background: #fff;
 		width: 100%;
 		margin-top: 25px;
 		padding: 0;
@@ -522,8 +532,8 @@ hr	{
 	  }
 	  
 	  .textWithBlurredBg:hover img{
-		filter: brightness(60%);
 		cursor: pointer;
+		filter: brightness(70%);
 	  }
 	   
 	  .textWithBlurredBg :not(img){
@@ -538,15 +548,44 @@ hr	{
 	  }
 	  
 	  .textWithBlurredBg h5{
-		top:50%
+		top:63%;
+		font-size: 10px;
+		text-align: center;
+		
 	  }
+	  .textWithBlurredBg .btn-play{
+		top:28%;
+		left: 35%;
+		width: 8rem;
+		cursor: pointer;
+		background: none;
+		text-transform: uppercase;
+		font-size: 14px;
+		border: none;
+
+		
+	  }
+
+	  .textWithBlurredBg .btn-play img {
+		  width: 40%;
+
+	  }
+
+	  .textWithBlurredBg .btn-play img:hover {
+		filter: brightness(100%);
+
+	}
+
+
+
+	
 	  
 	  .textWithBlurredBg:hover :not(img){
 		opacity:1;
 		}
 		
 		.footer-dark {
-			background: rgb(19, 17, 17);
+			background: #fff;
 		}
 
 	
@@ -567,27 +606,20 @@ hr	{
 			width: 15%;
 		}
 
-		.rights {
-			font-size: 12px;
+		.rights li {
+			font-size: 14px;
+			margin-right: 13rem;
+			opacity: 0.7;
 		}
 
-		.app ul {
+		.footer-content ul {
+			display: flex;
+			justify-content: start;
 			list-style: none;
-			text-align: center;
-		}
 
-	
-		.follow ul {
-			list-style: none;
-			text-align: center;
-		}
-
-		.followus {
-			text-transform: uppercase;
 		}
 
 		@media(max-width: 1024px) {
-
 			.front-page-container {
 				height: 50vh!important;
 			}
@@ -595,98 +627,15 @@ hr	{
 			.content {
 				margin-left: 5rem;
 			}
-
-			.trending-box {
-				margin-top:4rem;
-			}
-
-		} 
+		}
 		@media(max-width: 950px) {
 
-
 			.newreleases {
-				padding: 3rem;
+				padding: 1rem;
 				margin: 4px;
 			}
 
-			.icon-front {
-				width: 10%;
-			}
-		}
-		@media(max-width: 768px) {
-
-			.sign-log {
-				flex-direction: column;
-				justify-content: flex-start;
-				margin-right: 91rem;
-			}
-
-			.front-page-container {
-				height: 50vh !important;
-			}
-
-			.header1 {
-				margin-left: 1rem;
-				font-size: 50px;	
-			}
-
-			.content {
-				text-align: center;
-				align-items: center;
-			}
-			.subheader {
-				font-size: 30px;
-				margin-left: 6rem;
-			}
-
-			.front-page__button-container {
-				margin-left: -2rem;
-			}
 			
-
-			
-			
-		}
-		@media(max-width: 500px) {
-
-
-			.navbar-toggler {
-				margin-right: 5rem!important;
-			}
-			
-			.front-page-container {
-				height: 60vh!important;
-			}
-			.content {
-				padding: 0 auto;
-				margin: 0 0 0 15rem;
-				text-align:center;
-				justify-content: center;
-
-			
-			}
-
-			.content h1 {
-				font-size: 30px;
-				display: block;
-			}
-
-			.subheader {
-				font-size: 20px;
-			}
-
-			.front-page-button {
-				margin-top: 0.5rem;
-			}
-
-			.front-page__button-container {
-				display: flex;
-				justify-content: center;
-			}
-
-			.popular {
-				padding: 5rem;
-			}
 			.wrapper2 {
 				display: grid !important;
 				grid-template-columns: 1fr !important;
@@ -695,14 +644,66 @@ hr	{
 			.wrapper2 img {
 				width: 100%;
 			}
+
+			
+
+			.icon-front {
+				width: 10%;
+			}
+		}
+		@media(max-width: 768) {
+
+			
+
+			
+			
+		}
+		@media(max-width: 500px) {
+
+			.nav-link2 {
+				margin-left: -2rem;
+				margin-top:2rem;
+
+			}
+			.search {
+				margin-top: 1rem;
+
+			}
+			.search img {
+				width: 2%;
+				
+			}
+
+			.switch {
+				margin-left: -20rem;
+				margin-top: 1rem;
+			}
+			
+			.btn-exit {
+				margin-top:1rem;
+			}
+			.content {
+				padding: 1rem 3rem 1rem 4rem;
+				margin-top: 11rem;
+			}
+
+
+
+			.content .front-page-header {
+				font-size: 30px;	
+				margin: auto;			
+			}
+
+			
+
+			.front-page-button {
+				margin-top: 0.6rem;
+				margin-left: 1rem;
+				margin-right: 1rem;
+			}
 			
 			.new-releases {
 				text-align: center;
-			}
-
-			.trending-box {
-				position: relative;
-				padding: 2rem 8rem 4rem 5rem;
 			}
 			
 			.container-trending1 {
@@ -720,16 +721,15 @@ hr	{
 
 			}
 
-
 		.icon-container {
-			padding: 5rem!important;
+			padding: 2rem!important;
 		}
 
 		.icon-front {
-			width: 23%;
+			width: 28%;
 		
 		}
 		}
 
-		
+
 		
