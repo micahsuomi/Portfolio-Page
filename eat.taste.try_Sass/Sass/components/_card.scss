@@ -1,0 +1,284 @@
+.card {
+    position: relative;
+    height: 63rem;
+    perspective: 150rem;
+
+    &__side {
+
+        border: 1px solid $color-verylightgrey;
+        box-shadow: 0 1.5rem 4rem rgba(32, 31, 31, 0.15);  
+        height: 63rem;
+        position: absolute;  
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all .8s ease;
+        backface-visibility: hidden;
+   
+    }
+
+    &__picture {
+        height: 23rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    
+    &__pic-1 {
+
+        background: url("../imgs/card1.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    &__pic-2 {
+
+        background: url("../imgs/card2.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    &__pic-3 {
+
+        background: url("../imgs/card3.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    &__pic-4 {
+
+        background: url("../imgs/card4.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    &__pic-5 {
+
+        background: url("../imgs/card5.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    &__front {
+        background: #fff;
+    }
+
+    &__back {
+        transform: rotateY(180deg);
+        text-align: center;
+        padding-top: 22rem;
+    }
+
+    &__back-1 {
+        background: url("../imgs/card-1-background.jpg") no-repeat center center/cover;
+    }
+
+    &__back-2 {
+        background: url("../imgs/card-2-background.jpg") no-repeat center center/cover;
+    }
+
+    &__back-3 {
+        background: url("../imgs/card-3-background.jpg") no-repeat center center/cover;
+    }
+
+    &__back-4 {
+        background: url("../imgs/card-4-background.jpg") no-repeat center center/cover;
+    }
+
+    &__back-5 {
+        background: url("../imgs/card-5-background.jpg") no-repeat center center/cover;
+    }
+
+
+
+    &:hover &__front {
+        transform: rotateY(-180deg);
+
+    }
+    &:hover &__back {
+        transform: rotateY(0);
+    }
+
+    .card-text {
+        color: rgb(255, 255, 255);
+        padding: 8px;
+        padding-top: 0;
+        font-weight: 600;
+    }
+
+    
+    .dish-name {
+        color: $color-grey;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin: 3rem 1rem;
+    }
+
+    .dish-description {
+        color: $color-grey;
+        font-size: 13px;
+        margin: auto 1rem;
+    }
+
+    .menu-heading {
+        color: #fff;
+        font-size: 27px;
+        font-weight: 400;
+    }
+    .price {
+        text-align: center;
+        color: #fff;
+        margin: 1rem auto;
+        font-size: 27px;
+    }
+
+    .rec-description {
+        color: $color-grey;
+        font-size: 13px;
+        margin: 1rem 1rem;
+    }
+
+    .menu-rec {
+        text-align:center;
+        margin: 1rem 1rem;
+    }
+    .menu-rec-img {
+        width:40%;
+        border-radius: 100px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__bottom {
+        background-color: $color-red-medium;
+        height: 10rem;
+        border: none;
+        opacity: 0.9;
+        padding: 4rem 7rem;
+        -webkit-clip-path: polygon(0 15, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+
+        @include respond(tab-port) {
+            background-color: transparent;
+        }
+    }
+
+    &__bottom-header {
+        color: $color-white;
+        z-index:100;
+        text-transform: uppercase;
+        transform: skewY(-3.8deg);
+        font-size: 2rem;
+
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+
+    @include respond (tab-port) {
+        height: auto;
+        margin-top: 6rem;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba(32, 31, 31, 0.15);  
+
+
+
+        &__side {
+
+            height: auto;
+            position: relative;  
+            box-shadow: none;
+            border:none;
+           
+            }
+            
+            
+        
+    
+       
+        &__front {
+            background: #fff;
+        }
+
+        &__picture {
+            height: 44rem;
+            }
+        
+        &__back {
+            transform: rotateY(0);
+            text-align: center;
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            padding: 3rem;
+   
+        }
+
+        .btn2 {
+            width: 20rem;
+        }
+
+    
+    
+    
+        &:hover &__front {
+            transform: rotateY(0);
+    
+        }
+    
+        .card-text {
+            color: rgb(255, 255, 255);
+            padding: 8px;
+            padding-top: 0;
+            font-weight: 600;
+        }
+    
+        
+        .dish-name {
+            color: $color-grey;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin: 2rem 1rem;
+        }
+    
+        .dish-description {
+            color: $color-grey;
+            font-size: 13px;
+            margin: auto 1rem;
+        }
+    
+        .menu-heading {
+            color: #fff;
+            font-size: 27px;
+            font-weight: 400;
+        }
+        .price {
+            text-align: center;
+            color: #fff;
+            margin: 1rem auto;
+            font-size: 27px;
+        }
+    
+        .rec-description {
+            color: $color-grey;
+            font-size: 16px;
+            margin: 1rem 1rem;
+        }
+    
+        .menu-rec {
+            text-align:center;
+            margin: 1rem 1rem;
+        }
+        .menu-rec-img {
+            width:25%;
+            border-radius: 100px;
+        }
+    }
+
+    @include respond(phone) {
+        &__picture {
+            height: 30rem;
+        }
+
+        .menu-rec-img {
+            width: 36%;
+        }
+    }
+
+    
+    
+}
+

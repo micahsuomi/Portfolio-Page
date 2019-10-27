@@ -1,0 +1,19 @@
+.white-container {
+    padding: 7rem;
+    margin-top: 6rem;
+    height: 100vh;
+
+    @include respond(phone) {
+        height: 250rem;
+    }
+}
+
+.menu__container {
+    padding: 5rem;
+    
+    @include respond(phone) {
+        padding: 5rem;
+    }
+}
+
+

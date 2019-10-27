@@ -1,0 +1,51 @@
+.footer-dark {
+    background-color: rgb(32, 30, 30);
+    padding: 20px;
+    margin-top: 3rem;
+    clip-path: polygon(0 0, 100% 53%, 100% 100%, 0% 100%);
+
+    .footer__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1.2em;
+        grid-auto-rows: minmax(40px, auto);
+        }
+   
+   .footer__text {
+       color: #fff;
+       text-transform: uppercase;
+       font-weight: 600;
+       font-size: 13px;
+       justify-content: center;
+       margin-top:1.5rem;
+
+   }
+
+   .terms {
+    color: #fff;
+    font-weight: 600;
+       font-size: 13px;
+       margin-top:1.5rem;
+
+
+   }
+
+   .footer__social-media {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top:1.5rem;
+
+}
+
+.fab {
+    color: $color-white;
+    margin-left: 6px;
+
+}
+
+
+   }
+
+   

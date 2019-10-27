@@ -1,0 +1,100 @@
+.locations__container 
+{
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(148, 212, 212, 0.5), 
+        rgba(33, 58, 54, 0.9)) , url("https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-size: cover;
+        background-position: top;
+        transform: skewY(2deg);
+        height: 100vh;
+        margin-top: 10rem;
+        z-index: -1;
+        padding: 5rem;
+        text-align: center;
+
+        @include respond(tab-land) {
+            height: 75rem;
+        }
+        @include respond(tab-port) {
+            height: 160rem;
+
+
+        }
+        @include respond(phone) {
+
+            height: 170rem;
+            padding: 4rem;
+        }
+
+        .locations__wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            /* grid-auto-rows: 100px; */
+            grid-auto-rows: minmax(350px, auto);
+            align-content: center;
+            transform: skewY(-2deg);
+            height: 100%;
+
+            @include respond(tab-port) {
+                grid-template-columns: 1fr;
+                margin-top: -2rem;
+                padding: 0 0;
+            }
+
+            @include respond(phone) {
+                grid-gap: 1rem;
+                
+
+            }
+    
+        }
+
+        
+    .locations__view {
+        box-shadow: 0 1.5rem 4rem rgba(32, 31, 31, 0.15);  
+        border-radius: 3px;
+        background-size: cover;
+        filter: brightness(50%);
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin: 1rem auto;
+        }
+
+        @include respond(phone) {
+            margin-top: 2rem;
+            height: 100%;
+        }
+
+        &:hover {
+            filter: brightness(100%);
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        }
+    .locations__view-1 {
+        background: url("../imgs/helsinki.jpg") no-repeat;
+        background-size: cover;
+
+        
+    }
+
+    .locations__view-2 {
+        background: url("../imgs/tallin.jpg") no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .locations__view-3 {
+        background: url("../imgs/stockholm.jpg") no-repeat;
+        background-size: cover;
+
+    }
+
+
+
+}

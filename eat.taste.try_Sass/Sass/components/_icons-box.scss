@@ -1,0 +1,91 @@
+
+.icons__container {
+    width: 100%;
+    margin-top: 10rem;
+    align-content: center;
+    text-align: center;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    z-index: -2;
+    align-items: center;
+    height: 50rem;     
+
+    @include respond(tab-land) {
+        height: 55rem;
+    }
+    @include respond(tab-port) {
+        height: 160rem;
+    }
+    @include respond(phone) {
+        display: block;
+        height: 195rem;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+    .icons__wrapper {
+
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        height: 30rem;
+
+        
+
+        @include respond(tab-port) {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0 3rem;
+            margin-top: 3rem;
+        }
+
+        @include respond(phone) {
+            padding: 0;
+        }
+        
+    }
+      
+    
+    }
+    
+.icons__nested {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem;
+
+    @include respond (tab-port) {
+        padding: 10rem;
+    }
+}
+
+.icons__nested-1 {
+    background: $color-red-light;
+  
+}
+
+.icons__nested-2 {
+    background: $color-red-medium;
+    
+}
+
+.icons__nested-3 {
+    background: $color-red-magic;
+ 
+}
+
+.icons__nested-4 {
+    background: $color-red-magicdark;
+    
+}
+
+.food-icon {
+    color: $color-white;
+    opacity: 0.8;
+    margin-top: 3rem;
+    font-size: 5.5rem;
+
+    @include respond(tablet) {
+        margin: 4rem auto 1rem auto;
+    }
+}

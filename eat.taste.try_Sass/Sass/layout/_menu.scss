@@ -1,0 +1,21 @@
+.menu {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-gap: 2rem;
+        grid-auto-rows: minmax(200px, auto);
+        
+
+        @include respond(tab-port) {
+            grid-template-columns: (1fr);
+            padding: 4rem;
+    
+        }
+}
+
+
+
+
+  
+}

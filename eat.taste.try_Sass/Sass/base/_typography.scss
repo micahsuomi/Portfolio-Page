@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+
+.ourfood-headline {
+    color:teal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+
+    @include respond(tab-port) {
+        margin-top: 65rem;
+
+    }
+
+    @include respond(phone) {
+        margin-top: 120rem;
+
+    }
+
+
+
+}
+
+.menu-header {
+
+    margin-left: 30px;
+    margin-bottom: -30px;
+    text-align: center;
+    color: teal;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+
+    @include respond(tab-land) {
+        margin-top: 5rem;
+    }
+
+}
+
+
+.loc-header {
+       
+    color: rgb(248, 244, 244);
+    text-transform: uppercase;
+    transform: skewY(-2deg);
+    font-size: 2.5rem;
+    margin-top: 3rem;
+
+}
+
+.small-word {
+    font-size: 1.5rem;
+}
+//icons section
+
+.food-title {
+    color: $color-white;
+    opacity: 0.8;
+    margin: 1.2rem auto;
+    text-transform: uppercase;
+}
+
+.food-p {
+    color: $color-white;
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 1.7;
+
+    @include respond(tab-land) {
+        line-height: 1.4;
+    }
+}
+
+//locations
+.city {
+
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    opacity: 1.4;
+    font-size: 3rem;
+    padding: 26px;
+    text-align: center;
+    padding-top: 140px; 
+   }

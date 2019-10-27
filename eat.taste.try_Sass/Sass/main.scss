@@ -1,0 +1,422 @@
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+
+@import "components/navbar";
+@import "components/button";
+@import "components/icons-box";
+@import "components/card";
+@import "components/locations";
+@import "components/footer";
+
+@import "layout/header";
+@import "layout/about";
+@import "layout/menu";
+@import "layout/app";
+
+@import "pages/home";
+
+
+
+
+
+
+
+
+    
+
+.scroll-container {
+    width: 100%;
+    height: 100%;
+    /*CSS Smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth; 
+    scroll-snap-type: y mandatory;
+    overflow: hidden;
+}
+
+
+
+
+    
+
+
+
+
+/* Front page */
+
+
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Menu in $color-white container */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .grey-text {
+        color: #5c4747;
+    }
+
+  
+
+   
+
+    
+   
+
+   
+
+    
+
+@media(max-width: 1024px) {
+
+ 
+
+    .header-primary {
+        margin: 0 auto 0 auto;
+        justify-content: center;
+        padding: -3rem 2rem auto 2rem;
+    }
+
+    .header-secondary {
+        text-align: center;
+        font-size: 1rem;
+        text-align: center;
+        margin: 1rem -20rem;
+        
+    }
+
+   
+
+    .nested {
+        width: 100%;
+        height:10rem;
+        
+    }
+   
+
+    .wrapper .food-box {
+        margin: auto auto;
+    }
+    .p-food {
+        line-height: 1.8;
+        font-weight: 14px;
+        
+    }
+
+   
+    .menu-rec-img {
+        border-radius: 100px;
+    }
+
+}
+    
+@media(max-width: 850px) {
+
+
+        
+    .nav-links {
+        height: 100vh;
+    }
+    @include respond (tab-port) {
+        margin: 0 auto 0 auto;
+        justify-content: center;
+        padding: -3rem 2rem auto 2rem;
+    }
+   
+
+  
+        
+   
+    
+
+    
+
+
+    .red-container  {
+        height: 33rem;
+    }
+    
+    .menu-header {
+        margin-top: 5rem;
+    }
+  
+
+    
+    .menu__wrapper {
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+    }
+
+   
+    .menu__wrapper .card img {
+        border-radius: 50%;
+        
+    }
+
+    .menu__wrapper .card-nested1 .card1 {
+        height: 35rem;
+        padding-bottom: -5rem;
+    }
+
+    .menu__wrapper .card-nested2 .card2 {
+        height: 45rem;
+    }
+
+    .menu__wrapper .card-nested3 .card3 {
+        height: 25rem;
+    }
+
+    .menu__wrapper .card-nested4 .card4 {
+        height: 25rem;
+    }
+
+    .menu__wrapper .card-nested5 .card5 {
+        height: 25rem;
+    }
+
+    .rec-description {
+        text-align: center;
+    }
+    .menu-rec-img {
+        width: 30%;
+        border-radius: 150px;
+        
+    }
+    .btn2 {
+        width: 100%;
+
+    }
+    
+
+
+
+.app-container {
+    grid-template-columns: 1fr;
+}
+
+.app-container img {
+    width: 30%;
+}
+
+.download img {
+    width: 20%;
+}
+
+.recommended img {
+    width: 40%;
+}
+.footer-dark {
+    margin-top: 15rem;
+}
+}
+
+
+
+@media(max-width: 600px) {
+    .recommended-nested1 {
+        grid-template-columns: 1fr;
+    }
+
+    .recommended-nested2 {
+        grid-template-columns: 1fr;
+    }
+
+    .recommended img {
+        border-radius: 100px;
+    }
+}
+@media(max-width: 500px) {
+
+    
+
+    
+    
+    .hamburger {
+        right: 15%;
+    }
+    .nav-links {
+        
+        line-height: 2.5;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        font-size: 23px;
+        
+    }
+
+    .hero-container {
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%); 
+
+    }
+
+    .line2 {
+        width: 20rem;
+    }
+    .line3 {
+        width: 20rem;
+    }
+    
+    .hero-container {
+        text-align: center;
+        padding: 3rem 3rem;
+
+        &__header  {
+            margin-top: 4rem;
+        }
+    }
+
+   
+    .front-page-header {
+        font-size: 1.5rem;
+    
+    }
+
+    
+
+
+    
+    
+
+   
+
+
+    /* We love food */
+
+    
+
+    .yellow-nested1 {
+        display: block;
+        height: auto;
+    }
+    .red-container p {
+        line-height: 1.8;
+    }
+  
+
+    /* Menu */
+
+   
+    .menu__wrapper {
+        grid-gap: 2rem;
+    }
+    .menu__wrapper .card-nested1 .card1 {
+        height: 25rem;
+    }
+
+    .menu__wrapper .card-nested2 .card2 {
+        height: 25rem;
+    }
+
+    .menu__wrapper .card-nested3 .card3 {
+        height: 25rem;
+    }
+
+    .menu__wrapper .card-nested4 .card4 {
+        height: 25rem;
+    }
+
+    .menu__wrapper .card-nested5 .card5 {
+        height: 25rem;
+    }
+
+    .btn2 {
+        width:10rem;
+
+    }
+
+    /* Location */
+
+    
+  
+    
+  
+    .app-container {
+        margin-top: 10rem;
+        padding: 5rem;
+    }
+
+    .app-nested img {
+        width: 70%;
+    }
+
+    .recommended-nested1 img {
+        width: 50%;
+        border-radius: 200px;   
+
+    }
+
+    .recommended-nested2 img {
+        width: 50%;
+        border-radius: 200px;   
+    }
+    .download {
+        margin-top: 2rem;
+    }
+
+    #myBtn {
+        margin-right: 6rem;
+    }
+    .footer-dark {
+        justify-content: center;
+        
+    }
+}
+
+@media(max-width: 360px) {
+    .header-primary {
+        margin-top: -3rem;
+    }
+}
+@media(max-width: 320px) {
+
+    .hamburger {
+        right: 4%;
+    }
+    .nav-links a {
+        font-size: 20px;
+    }
+    .hero-container {
+        height: 100vh;
+        padding: 12rem;
+
+        &__header {
+            margin-top: 4rem;
+        }
+
+    }
+
+   
+
+    .red-container {
+        height: 174rem;
+    }
+
+    
+    
+}

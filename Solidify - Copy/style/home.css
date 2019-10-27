@@ -1,0 +1,883 @@
+
+
+/*Landing*/
+.profile-container {
+    padding: 7rem;
+    margin-top: 2rem;
+}
+
+.profile-header {
+    color: white;
+}
+
+.icon-wrapper {
+    padding: 2rem;
+}
+
+.icon-profile {
+    width: 70%;
+}
+
+
+/*Home*/
+.scroll-container {
+
+    width: 100%;
+    height: 100%;
+    /*CSS Smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth; 
+    scroll-snap-type: y mandatory;
+    overflow: hidden;
+}
+
+
+
+.front-container {
+    
+    /* background: linear-gradient(to 
+    bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), 
+    linear-gradient(to top, rgba(255,255,255,0.40) 
+    0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    background-position: center; */
+
+    position: relative;
+    background-image: linear-gradient(to right bottom, rgba(57, 72, 102, 0.5), rgba(24, 23, 26, 0.8)), 
+    url("../imgs/adult-bitcoin-blockchain-1037914.jpg");
+    background-size:cover;
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 97% 0, 85% 100%, 0 100%);
+    clip-path: polygon(0 0, 97% 0, 85% 100%, 0 100%);
+
+    /* opacity: 0.5; */
+}
+
+.front-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   }
+
+
+.header-container .front-logo {
+    width: 10%;
+    display: inline-block;
+  
+}
+
+.title {
+    display: block;
+    color:var(--very-light);
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+
+    
+}
+
+
+.subtitle {
+    display: block;
+    margin-top: 10px;
+    color: var(--very-light);
+    font-weight: 400;
+    letter-spacing: 5px;
+   
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+.btn-red {
+    background: rgb(190, 80, 80);
+    width: 30px;
+    height: 30px;
+    margin: 0.4rem;
+    border: none;
+    border-radius: 25px;
+    
+}
+
+.btn-red:hover {
+    background: rgb(199, 103, 103);
+    cursor: pointer;
+}
+
+.button-container .fas {
+    color: #fff;
+}
+.about-container {  
+    margin-top: 2rem;
+}
+.about-wrapper {
+    display: grid;
+    grid-template-columns:repeat(2,1fr); 
+    grid-auto-rows: minmax(600px, auto);
+    padding: 4rem;
+    grid-gap: 5px;
+}
+
+
+.view {
+    
+    background: url("../imgs/iso1.jpg")no-repeat center center/cover;
+    justify-content: center;
+    align-content: center;
+    margin: 4rem;
+
+}
+
+
+.nested {
+    grid-auto-flow: repeat(2,1fr);
+    padding: 4rem;
+    line-height: 2;
+    margin-top: -2rem;
+}
+
+.about-container .about-wrapper .nested h2{
+    color:var(--shadow);
+    margin-bottom: 23px;
+    text-align: center;
+
+}
+
+.about-container .about-wrapper .nested p {
+    color: var(--grey-text);
+
+}
+
+.value-container {
+    margin-top: -10rem;
+}
+.value-wrapper {
+    display: grid;
+    grid-template-columns:repeat(2,1fr); 
+    grid-auto-rows: minmax(600px, auto);
+    padding: 4rem;
+    grid-gap: 5px;
+}
+
+.view2 {
+    
+    background: url("../imgs/iso3.jpg")no-repeat center center/cover;
+    justify-content: center;
+    align-content: center;
+    margin: 4rem;    
+    
+}
+
+.value-container .value-wrapper .nested h2{
+    color:var(--shadow);
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.value-container .value-wrapper .nested p {
+    color: var(--grey-text);
+}
+
+/* Services */
+
+.services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+
+}
+
+.service {
+    text-align: center;
+    padding: 5rem;
+    background: var(--very-light);
+    box-shadow: var(--dark);
+    border-radius: 10px;
+    height: 20rem;
+}
+
+.service .fas {
+    color:var(--shadow);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.service .fab {
+    color:var(--shadow);
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+.service h3 {
+    padding: 1.2rem;
+    color:var(--shadow);
+}
+.service p {
+    line-height: 1.6;
+    color: var(--grey-text);
+    font-size: 15px;
+}
+
+
+/* Team */
+.team-container {
+    background: var(--very-light);
+    margin-top: 4rem;
+
+}
+.team-heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--shadow);
+    padding-top:5rem;
+}
+.team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(400px, auto);
+    grid-gap: 40px; 
+    margin-top:20px;
+    justify-content: center;
+    padding: 5rem;
+    text-align: center;
+    
+}
+
+.nested1 {
+    display: grid;
+    grid-auto-flow: repeat(2,1fr);
+    justify-content: center;
+
+}
+.nested1-view {
+    
+    background: url("../imgs/team1.jpg")no-repeat center center/cover;
+    background-size: cover;
+    height: 350px;
+    width: 300px;
+    border-radius: 3px;
+   
+}
+
+.nested1 h2 {
+    margin-top: 1rem;
+    color: var(--shadow);
+    font-weight: 700;
+}
+
+.nested1 h3 {
+    color: var(--grey-text);
+}
+
+.nested1 a:hover {
+    color: skyblue;
+}
+.nested2 {
+    display: grid;
+    grid-auto-flow: repeat(2,1fr);
+    justify-content: center;
+}
+.nested2-view {
+    
+    background: url("../imgs/team2.jpg")no-repeat center center/cover;
+    background-size: cover;
+    height: 350px;
+    width: 300px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 3px;   
+}
+
+.nested2 h2 {
+    margin-top: 1rem;
+    color: var(--shadow);
+    font-weight: 700;
+}
+
+.nested2 h3 {
+    color: var(--grey-text);
+}
+
+.nested2 a:hover {
+    color: skyblue;
+}
+
+.nested3 {
+    display: grid;
+    grid-auto-flow: repeat(2,1fr);
+    justify-content: center;
+
+}
+.nested3-view {
+    
+    background: url("../imgs/team3.jpg")no-repeat center center/cover;
+    background-size: cover;
+    height: 350px;
+    width: 300px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 3px;
+}
+
+.nested3 h2 {
+    margin-top: 1rem;
+    color: var(--shadow);
+    font-weight: 700;
+}
+
+.nested3 h3 {
+    color: var(--grey-text);
+}
+
+.nested3 a:hover {
+    color: skyblue;
+}
+
+.get-app-container {
+    background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+
+
+}
+.get-app-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0;
+    padding: 2rem;
+    /* background: var(--dark); */
+    align-items: center;
+     
+}
+
+
+.wallet-phone {
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+    margin: 5rem 15rem;
+}
+
+.nested-app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:-2rem;
+    align-items: center;
+    align-content: end;
+}
+
+.nested-app img {
+    width: 75%;
+    cursor: pointer;
+    margin: 0 0 0 3rem;
+}
+
+.nested5 {
+        
+        margin-top: 17rem;
+        padding: 5rem;
+        justify-content: center;
+        text-align:center;
+        align-items: center;
+        margin: auto auto;
+    
+}
+
+.nested5 h2 {
+    color: var(--very-light);
+    text-transform:uppercase;
+    margin-top: 2.3rem;
+    font-weight: 400;
+}
+.team-wrapper .fab {
+    margin-top: 0.7rem;
+}
+
+.appstore-button {
+    margin-top: 1rem;
+    cursor: pointer;
+    width: 30%;
+}
+
+.appstore-button-2 {
+    margin-top: 1rem;
+    cursor: pointer;
+    width: 33%;
+}
+
+
+
+.blocks {
+    animation: move 2s infinite alternate;
+    
+}
+
+
+
+ 
+    
+    
+
+/* Blocks Animation */
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+    }
+
+
+/* Media Queries */
+
+@media(max-width: 1400px) {
+   
+
+
+@media(max-width: 1024px) {
+    
+    
+.front-container {
+    height: 70vh;
+    text-align: center;
+}
+
+.header-container {
+    margin-top: -20rem;
+  
+}
+
+
+.about-wrapper .view{
+    margin-top:2rem;
+}  
+    
+
+    .about-wrapper {
+        grid-template-columns: 1fr;        
+        }
+    
+        .about-wrapper .view {
+            width: 80%;
+        }
+    
+        .value-wrapper {
+            grid-template-columns: 1fr;   
+            margin-top: 4rem;     
+            }
+    
+            .value-wrapper .nested h2{
+                margin-top: -15rem;
+            }
+        
+            .value-wrapper .view2 {
+                width: 80%;
+                margin-top: -23rem;
+            }
+    
+            .service-wrapper {
+                margin-top: -35rem;
+            }
+    }
+    .blocks {
+        width: 30px;
+        animation: move 2s infinite alternate;
+    }
+
+   
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+        100% {
+            transform: translateY(20px);
+        }
+        
+    }
+   
+    .header-container img  {
+        width: 20px;
+        display: block;
+    }
+
+    
+
+    .front-wrapper .title {
+        text-align: center;
+        font-size: 1.9em;
+    }
+
+    .front-wrapper .subtitle {
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+
+
+@media(max-width: 900px) {
+    
+    
+    
+    .blocks {
+        width: 30px;
+        animation: move 2s infinite alternate;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+        100% {
+            transform: translateY(20px);
+        }
+        
+    }
+
+    .front-container {
+        grid-template-columns: 1fr;
+        grid-gap: -1rem;
+    }
+    
+
+    .front-wrapper .front-logo {
+        width: 8%;
+        margin-top: 8rem;
+    }
+
+    .front-wrapper .title {
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .front-wrapper .subtitle {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        grid-gap: -2rem;
+        margin: auto auto;
+    }
+    .about-wrapper .view {
+        width: 90%;
+    }
+
+    .about-wrapper .nested {
+        margin: -4rem auto;
+    }
+    .value-wrapper{
+        grid-template-columns: 1fr;
+        margin-top: 4rem;
+    }
+
+    .value-wrapper .nested2 {
+        margin: -4rem auto;
+    }
+    .value-wrapper .view2 {
+        width: 90%;
+        margin-top: -8rem auto;
+    }
+    
+    .services-wrapper {
+        margin-top: 2rem;
+    }
+    .team-wrapper {
+        grid-template-columns: 1fr; 
+    }
+
+    .get-app-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+        display: block;
+    }
+
+    .get-app-wrapper .wallet-phone {
+        display: block;
+    }
+}
+
+@media(max-width: 850px) {
+    
+
+    .blocks {
+        width: 30px;
+
+        animation: move 2s infinite alternate;
+    }
+    
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+        100% {
+            transform: translateY(20px);
+        }
+    }     
+        .front-wrapper {
+            text-align: center;
+        }
+    
+        .front-wrapper .front-logo {
+            width: 8%;
+            
+        }
+    
+        .front-wrapper .title {
+           
+            font-size: 1.8em;
+        }
+
+        .value-wrapper .view2 {
+            margin-top: -14rem;
+        }
+        .services-wrapper {
+            grid-template-columns: repeat(2,1fr);
+            margin-top: -10rem;
+        }
+    }
+
+
+@media(max-width: 768px) {
+    
+
+    
+    .front-container {
+        
+        padding-top: 5rem;
+
+    }
+
+    .header-container {
+        margin-top: .1rem;
+    }
+    
+    .front-wrapper .front-logo {
+        width: 10%;
+        
+    }
+
+    .about-container {
+        margin-top: 2rem;
+        padding: 1rem 3rem .5rem 1rem;
+    }
+    .value-container {
+        margin-top: 3rem;
+    }
+
+    .services-wrapper {
+        margin-top: 2rem;
+    }
+
+}
+
+
+@media(max-width: 650px) {
+
+   
+    .team-wrapper {
+        grid-template-columns: 1fr;
+        grid-gap: 2px;
+        margin: auto 2rem;
+        margin: 4rem;
+    }
+
+    .nested1-view {
+    height: 400px;
+    width: 350px;
+}
+
+.nested2-view {
+    height: 400px;
+    width: 350px;
+}
+.nested3-view {
+    height: 400px;
+    width: 350px;
+}
+
+.nested-app {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+}
+} 
+@media(max-width: 500px) {
+
+   
+    .front-container {
+        -webkit-clip-path: none;
+        clip-path: none;
+        height: 100vh;
+
+    }
+    .front-wrapper {
+        margin-top: 0;
+        top: 60%;
+        text-align: center;
+
+    }
+   
+    .front-wrapper .front-logo {
+        width: 10%;
+        
+
+    }
+
+    .front-wrapper .title {
+        font-size: 1.6em;
+        
+    }
+
+    .front-wrapper .subtitle {
+        font-size: 0.8;
+
+    }
+
+    .btn-red {
+        height: 25px;
+        width: 25px;
+        margin-top: 1rem;
+    }
+
+    .button-container .fas {
+        text-align: center;
+    }
+    
+    .about-container .about-wrapper {
+        margin: 0 -6rem;
+    }
+    .about-container .about-wrapper .nested { 
+        margin-top: -8rem;
+        }
+    .about-wrapper .view {
+        width: 80%;
+        display: block;
+        margin: 1rem auto;
+        
+    }
+
+    .about-wrapper h2 {
+        margin-top: 7rem;
+    }
+    .about-wrapper .nested p {
+        padding: 0 0;
+    }
+
+    
+    .value-container .value-wrapper {
+        margin: 0 -6rem;
+    }
+    .value-container .value-wrapper .nested { 
+        margin-top: 1rem;
+        }
+    .value-wrapper .view2 {
+        width: 80%;
+        display: block;
+        margin: 1rem auto;
+        
+    }
+
+    .value-wrapper .nested h2 {
+        margin-top: -8rem;
+    }
+
+    .about-wrapper .nested p {
+        padding: 0 0;
+    }
+    .services-wrapper {
+        grid-template-columns: 1fr;
+        margin: auto auto;
+    }
+
+    .services-wrapper .service {
+        height: 17rem;
+        width: 17rem;
+
+        
+        
+    }
+
+    
+    .team-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .get-app-wrapper {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+    
+
+    .nested-app {
+        margin: auto 3rem auto auto;
+    }
+    .nested5 {
+        margin: 3rem auto auto auto;
+    }
+    
+    .blocks {
+        width: 80px;        
+        animation: move 2s infinite alternate;
+    }
+
+    @media(max-width:375px) {
+
+        
+        .nested5 {
+            margin-top: 2.5rem;
+        }
+
+        .nested5 img {
+            width: 70px;
+        }
+
+      
+        .services-wrapper {
+            margin: auto -2.5rem;
+        }
+
+        .service {
+            margin: auto;
+        }
+
+       
+    }
+    @media(max-width:320px) {
+
+        
+        .services-wrapper  {
+            margin: auto auto auto -3.5rem;
+        }
+
+        .get-app-wrapper {
+            text-align:center;
+        }
+
+        .service {
+            margin: auto;
+        }
+
+       
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+        100% {
+            transform: translateY(20px);
+        }
+        }
+    }

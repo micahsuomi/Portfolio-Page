@@ -1,0 +1,111 @@
+.hero-section {
+
+    .hero-container {
+        background-image: linear-gradient(
+        to right bottom,
+        rgba(53, 68, 50, 0.6), 
+        rgb(13, 14, 13)) , url("../imgs/background-hero.jpg");
+        background-size: cover;
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+        background-position: top;
+        position: relative;
+        justify-content: center;
+
+        @include respond(tab-land) {
+            height: 90vh;
+            clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); 
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+
+        }
+
+        @include respond(phone) {
+            height: 100vh;
+            clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+            
+            
+            }
+            
+        
+
+
+        &__header {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    
+    
+    
+       .line2 {
+           width: 550px;
+           height: 4px;
+           background-color: $color-white;
+           align-items: center;
+           opacity: 0.9;
+           display: inline-block;
+           margin: 0 auto;
+    
+       }
+      
+       .line3 { 
+        width: 550px;
+        margin: 2rem auto;
+        height: 4px;
+        background-color: $color-white;
+        border: none;
+        align-items: center;
+        opacity: 0.9;
+    
+       }
+    
+    .front-page-header {
+        text-transform: uppercase;
+        color:$color-white;
+        font-size: 60px;
+        text-align:center;
+        margin-top: 2rem;
+        letter-spacing: 10px;
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 1px;
+            font-size: 40px;
+        }
+    
+    }
+    
+    .header-secondary {
+        text-transform: uppercase;
+        color: rgb(241, 227, 227);
+        font-size: 1rem;
+        text-align:center;
+        font-weight: 600;
+        padding: 0 10rem 0 10rem;
+        margin-top: 1rem;
+        line-height: 1.9;
+        letter-spacing: 15px;
+        animation-name: moveInRight;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        font-size: 20px;
+    
+        @include respond(tab-port) {
+            text-align: center;
+            font-size: 0.9rem;
+            text-align: center;
+            margin: 1rem 4rem;
+            
+        }
+
+        
+    }
+}
+}
+

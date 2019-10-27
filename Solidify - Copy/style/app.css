@@ -1,0 +1,361 @@
+
+    
+    
+
+    
+        /*App*/
+
+        .front-app-container {
+            height: 100vh;
+            width: 100%;
+            padding: 8rem;
+            background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+
+        }
+
+        .front-app-wrapper {
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-gap: 1rem;
+            text-align: center;
+        }
+
+        .front-app-wrapper img {
+            width: 60%;
+        }
+
+        .front-app-wrapper .app1 {
+            justify-self:end;
+            margin-left: 8rem;
+        }
+
+        .front-app-wrapper .app3 {
+            margin-right: 8rem;
+        }
+
+        .description-app-container {
+            padding: 8rem; 
+        }
+
+        .description-app-wrapper1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .icons-app-box1 {
+            display:flex;
+            align-items:center;
+            justify-content: space-evenly;
+        }
+
+        .description-app-wrapper1 .app-icon {
+            width: 14%;
+        }
+
+        .description-app-wrapper1 .app-icon-mobile {
+            width: 9%;
+        }
+
+        .description-app-wrapper1 .arrow-icon {
+            width: 24%;
+        }
+
+        .wallet-app-text1 h3 {
+            text-align: center;
+            color: var(--shadow);
+            opacity: 0.8;
+        }
+
+        .wallet-app-text1 p {
+            font-size: 14px;
+            color:var(--grey-text);
+            opacity: 0.7;
+            margin-top: 1.5rem;
+        }
+
+        .description-app-container2 {
+            padding: 8rem;
+            background: #8A9599;
+
+        }
+        .description-app-wrapper2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .icons-app-box1 {
+            display:flex;
+            align-items:center;
+            justify-content: space-evenly;
+        }
+
+        .app-icon {
+            width: 14%;
+        }
+
+        .app-icon-mobile {
+            width: 9%;
+        }
+
+        .arrow-icon {
+            width: 24%;
+        }
+
+        .wallet-app-text2 h3 {
+            text-align: center;
+            color: var(--light);
+            opacity: 0.8;
+        }
+
+        .wallet-app-text2 p {
+            font-size: 14px;
+            color:var(--light);
+            opacity: 0.7;
+            margin-top: 1.5rem;
+        }
+
+        .app2-container {
+            padding: 8rem;
+            background: url("../imgs/app2-background.png") no-repeat center center/cover;
+            margin-top: 3rem;
+            width: 100%;
+            height: 100vh;
+        }
+        .app2-wrapper {
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-gap: 1rem;
+            text-align: center;
+        }
+
+        .app2-wrapper img {
+            width: 60%;
+        }
+
+        .app2-wrapper .app4 {
+            justify-self:end;
+            margin-left: 8rem;
+        }
+
+        .app2-wrapper .app6 {
+            margin-right: 8rem;
+        }
+
+        .blue-white-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 5rem;
+        } 
+        .bluewrapper {
+            padding: 5rem;
+            background: var(--shadow);
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+
+        .blue-nested1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+
+        .wallet-app-users {
+            width: 20%;
+            float: right;
+            margin-right: 7rem;
+            opacity: 0.7;
+        }
+
+        .blue-nested1 h3 {
+            text-align: center;
+            color: var(--light);
+            opacity: 0.7;
+        }
+        .blue-nested1 p {
+            color: var(--light);
+            font-size: 13px;
+            opacity: 0.7;
+            margin-top: 1rem;
+
+        }
+
+        .blue-nested2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+
+        .blue-nested2 h3 {
+            text-align: center;
+            color: var(--light);
+            opacity: 0.7;
+        }
+        .blue-nested2 p {
+            color: var(--light);
+            font-size: 13px;
+            opacity: 0.7;
+            margin-top: 1rem;
+        }
+
+        .wallet-app-code {
+            width: 20%;
+            float: left;
+            margin-left: 7rem;
+            opacity: 0.7;
+        }
+
+
+        .connect-whitewrapper {
+            padding: 5rem;
+            align-items: center;
+            margin: auto auto;
+        }
+
+        .connect-whitewrapper h3 {
+            color: var(--shadow);
+            opacity: 0.7;
+        }
+
+        /* .dotted-line {
+            width: 3px;
+            height: 10rem;
+            color: black;
+            transform: skewY(90deg);
+        } */
+        .connect-whitewrapper ul {
+            list-style: none;
+            margin-top: 2rem;
+        }
+        .connect-whitewrapper ul li img {
+            width: 50%;
+            margin-top: 1rem;
+            opacity: 0.7;
+        }
+
+        #footer-app {
+            margin-top:5rem;
+        }
+
+        @media(max-width: 1024px) {
+            .front-app-container {
+                height: 50%;
+            }
+
+            .app2-container {
+                height: 50%;
+            }
+        }
+        @media(max-width:768px) {
+
+            .front-app-container {
+                padding: 5rem;
+                height: 50%;
+            }
+          
+
+            .front-app-wrapper img {
+                width: 90%;
+            }
+            .front-app-wrapper .app1 {
+                justify-self: center;
+                margin: auto auto;
+            }
+
+            .front-app-wrapper .app3 {
+                margin: auto auto;
+            }
+
+            .description-app-container {
+                margin-top: 3rem;
+                padding: 2rem;
+            }
+
+            .description-app-wrapper1 .icons-app-box1 .app-icon {
+                width: 10%;
+            } 
+            .description-app-wrapper1 .icons-app-box1 .app-icon-mobile {
+                width: 7%;
+            } 
+
+            .description-app-wrapper1 {
+                grid-template-columns: 1fr;
+                grid-gap:4rem;
+            }
+
+            .description-app-container2 {
+                padding: 2rem;
+                margin-top: 2rem;
+            }
+
+            .description-app-wrapper2 {
+                grid-template-columns: 1fr;
+                grid-gap: 4rem;
+                margin-bottom: 2rem;
+            }
+
+            .description-app-wrapper2 .icons-app-box1 .app-icon {
+                width: 10%;
+            } 
+            .description-app-wrapper2 .icons-app-box1 .app-icon-mobile {
+                width: 7%;
+            } 
+
+            .app2-container {
+                padding: 2rem;
+                height: 50%;
+            }
+
+            .app2-wrapper {
+                justify-content: center;
+                margin: auto auto;
+            }
+
+            .app2-wrapper .app4 {
+                text-align: center;
+                margin: auto 2rem;
+            }
+
+            .app2-wrapper .app6 {
+                text-align: center;
+                margin: auto 2rem;
+            }
+
+            .blue-white-container {
+                grid-template-columns: 1fr; 
+            }
+        }
+
+        @media(max-width: 500px) {
+            .front-app-wrapper {
+                grid-template-columns: 1fr;
+                justify-content: center;
+            }
+
+            .app2-wrapper {
+                grid-template-columns: 1fr;
+                grid-gap: 2rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+            .blue-nested1 {
+                grid-template-columns: 1fr;
+            }
+
+            .blue-nested1 img {
+                margin: auto 5.5rem auto 2rem;
+            }
+
+            .blue-nested1 h3 {
+                margin-top: 2rem;
+            }
+            .blue-nested2 {
+                grid-template-columns: 1fr;
+            }
+
+            .blue-nested2 img {
+                margin: auto 2rem auto 5.2rem;
+            }
+
+        }
+    

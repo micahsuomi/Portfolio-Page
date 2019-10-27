@@ -1,0 +1,118 @@
+.navbar {
+
+        width: 100%;
+        position: relative;
+
+    &__hamburger-container {
+        position: relative;
+        background:white;
+        z-index:10;
+        
+        }
+        
+        &__hamburger {
+
+             position: absolute;
+             cursor: pointer;
+             top: 5%;
+             right: 2.5%;
+             z-index: 2;
+             position: fixed;
+             height: 6.1rem;
+             width: 6.1rem;
+             border-radius: 50%;
+             background-color: #fff;
+             cursor: pointer;  
+             justify-items: center;
+             padding: 1.3rem .8rem;
+             box-shadow: 0 1.5rem 4rem rgba(32, 31, 31, 0.15); 
+             
+             @include respond(tab-port) {
+                top: 2.5%;
+
+             }
+             @include respond (phone) {
+                
+              
+                top: 2.5%;
+                right: 2.5%;
+                padding: 0.75rem 0.3rem;
+
+            }
+            
+            }
+
+            
+
+            
+                    
+            &__line {
+
+                margin-top: 3rem;
+                width: 30px;
+                height: 3px;
+                margin: 6px;
+                background: $color-black; 
+
+                
+ 
+            }
+     
+
+                &__nav-links {
+
+                    height: 100vh;
+                    width: 100%; 
+                    -webkit-clip-path: circle(1.0% at 50% 50%);
+                    clip-path: circle(1.0% at 50% 50%);
+                    transition: all 0.3s ease-out;
+                    opacity: 0.95;
+                    line-height: 4.08rem;
+                    padding-top: 18%;
+                    @include center-horizontal-vertical;
+                    position: fixed;
+
+                }
+                    &__nav-link {
+                        border: 1px solid $color-white;
+                        text-align: center;
+                        opacity: .7;
+                        z-index: 2000;
+                    }
+                        &__link {
+                            font-size: 31.9px;
+                            color: $color-white;
+                            text-decoration: none;
+                            z-index: 1000;
+
+                            &:hover {
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                
+                            }
+                        }
+
+                   
+                        &__nav-links.open {
+                            clip-path: circle(152.5% at 48% 1%);
+
+                            background: $color-black;
+                            height: 100vh;
+                            z-index: 2;
+                            align-content: center;
+                        
+                        
+                        }
+         
+            }
+        
+    
+        
+        
+           
+                    
+                
+            
+            
+            
+            

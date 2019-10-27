@@ -1,0 +1,14 @@
+{
+  "name": "eat.taste.try_sass",
+  "version": "1.0.0",
+  "description": "eat.taste.try with Sass\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dlanding page with Sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss  sass/main.css -w"
+  },
+  "author": "Michele Zucca",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
