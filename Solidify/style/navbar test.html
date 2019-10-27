@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,4 +90,97 @@ nav ul li a:hover {
         </div>
     </nav>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar Test</title>
+
+    <style>
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.menu{
+    width: 25px;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(49, 55, 59);
+}
+
+nav ul li a:hover {
+    background-color: rgb(65, 73, 78);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+
+}
+.exit-btn img {
+    width: 15px;
+    cursor: pointer;
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <nav>
+        <div class="navbar-container">
+
+            <div class="nav main-nav">
+                    <a href="#" class="hide-desktop">
+                            <img src="../imgs/ham.svg" alt="" class="menu" id="menu">
+                        </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="../imgs/exit.svg" alt="exit menu">
+
+                     <li><a href="#home">Home</a></li>   
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+</body>
+>>>>>>> df05c7919672b27bb7c1b546138851bfbce8338d
 </html>

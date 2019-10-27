@@ -1,0 +1,172 @@
+
+
+/*Landing*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background: rgb(19, 17, 17);
+	overflow-x: hidden;
+	height: 100vh;
+}
+
+:root {
+	
+	--font-size-big: 6rem;
+	--font-size-mediumbig: 3rem;
+    --font-size-medium: 2rem;
+    --font-size-small: 1.6rem;
+    --font-size-verysmall: 1.2rem;
+}
+
+.grow { 
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+ }
+.grow:hover {
+     transform: scale(1.1);
+     }
+
+.grow2 { 
+    transition: all .2s ease-in-out;
+cursor: pointer;
+ }
+.grow2:hover {
+     transform: scale(2.1); 
+    }
+
+.nav-container {
+	padding: 10px;
+}
+.navbar-brand2 {
+	padding: 8px;
+	padding-top: 5px;
+	width: 8%;
+	margin-right: 4rem;
+
+
+
+}
+
+.profile-container {
+	padding: 4rem 25rem;
+	height: 100vh;
+}
+
+.profile-heading {
+	justify-content: center;
+}
+.profile-header {
+	color: #ffffff !important;
+	font-size: 52px;
+	
+}
+
+.icon-wrapper {
+	margin:0;
+	margin-top: 0.8rem;	
+	padding: 1rem;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+}
+
+
+.icon-profile {
+	width: 100%;
+	border: 3.5px solid #4e4444;
+	
+}
+
+.profile-name {
+	color: white;
+	margin-top: .7rem;
+	font-weight: 400;
+	font-size: var(--font-size-small);
+	opacity: .7;
+}
+
+.icon-profile:hover {
+	border: 3.5px solid #ffffff;
+}
+.icon-profile2 {
+	height: auto;
+	width: 100%;
+	padding: 1.6rem;
+	justify-content: center;
+    text-align: center;
+	text-decoration: none;
+	color: grey;
+}
+
+
+.icon-profile2:hover {
+	border: 3.5px solid #ffffff;
+	background-color: #ffffff;
+	color: grey;
+}
+.manage-row {
+	justify-content: center;
+	margin-top: 1rem;
+
+}
+
+.manage-profiles-button {
+	background: none;
+	border-radius: 0px;
+	text-transform: uppercase;
+	width: 18.7rem;
+	margin-top: 5rem;
+	padding: .4rem;
+	font-weight: 300;
+	color: #faf3f3;
+	font-size: var(--font-size-verysmall);
+	opacity: .5;
+	letter-spacing: 3px;
+}
+
+a:link {
+	text-decoration: none;
+}
+.manage-profiles-button:hover {
+	color: white!important;
+	background: none;
+	border: 1.5px solid #ffffff;
+	text-decoration-style: none;
+
+}
+@media(max-width: 1024px) {
+	.profile-container {
+		padding: 60px;
+		margin-top: 3rem;
+	}
+
+	.manage-profiles-button {
+		margin-top: -4rem;
+	}
+}
+
+@media(max-width: 768px) {
+	.profile-container {
+		padding: 150px;
+		margin-top: 3rem;
+	}
+
+	.manage-profiles-button {
+		margin-top: -4rem;
+	}
+
+@media(max-width: 500px){
+
+.profile-container {
+	padding: 70px;
+	margin-top: 1rem;
+}	
+
+}
