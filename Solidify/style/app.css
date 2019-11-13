@@ -144,11 +144,14 @@
             margin-right: 8rem;
         }
 
-        
+        .connect-conteiner {
+            height: 60vh;
+        }
         .blue-white-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             margin-top: 5rem;
+            height: 80vh;
         } 
 
         .bluewrapper {
@@ -163,12 +166,11 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             align-items: center;
+            justify-items: center;
         }
 
         .wallet-app-users {
-            width: 20%;
-            float: right;
-            margin-right: 7rem;
+            width: 55%;
             opacity: 0.7;
         }
 
@@ -178,18 +180,14 @@
             opacity: 0.7;
             font-size: var(--font-size-medium);
         }
-        .blue-nested1 p {
-            color: var(--light);
-            opacity: 0.7;
-            margin-top: 1rem;
-            font-size: var(--font-size-small);
-
-        }
+       
 
         .blue-nested2 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             align-items: center;
+            justify-items: center;
+
         }
 
         .blue-nested2 h3 {
@@ -199,18 +197,17 @@
             font-size: var(--font-size-medium);
 
         }
-        .blue-nested2 p {
+        .blue-nested-paragraph {
             color: var(--light);
             opacity: 0.7;
-            margin-top: 1rem;
+            margin-top: 1.8rem;
             font-size: var(--font-size-small);
+            line-height: 1.4;
 
         }
 
         .wallet-app-code {
-            width: 20%;
-            float: left;
-            margin-left: 7rem;
+            width: 45%;
             opacity: 0.7;
         }
 
@@ -221,7 +218,7 @@
             margin: auto auto;
         }
 
-        .connect-whitewrapper h3 {
+        .connect-header {
             color: var(--shadow);
             opacity: 0.7;
             font-size: var(--font-size-medium);
@@ -272,9 +269,8 @@
                 height: 50%;
             }
           
-
             .front-app-wrapper img {
-                width: 90%;
+                width: 65%;
             }
             .front-app-wrapper .app1 {
                 justify-self: center;
@@ -286,7 +282,6 @@
             }
 
             .description-app-container {
-                margin-top: 3rem;
                 padding: 6rem;
             }
 
@@ -321,8 +316,8 @@
             } 
 
             .app2-container {
-                padding: 2rem;
-                height: 50%;
+                padding: 8rem;
+                height: 52%;
             }
 
             .app2-wrapper {
@@ -348,33 +343,50 @@
         @media(max-width: 500px) {
             .front-app-wrapper {
                 grid-template-columns: 1fr;
+                grid-gap: 4rem;
                 justify-content: center;
             }
 
             .app2-wrapper {
                 grid-template-columns: 1fr;
-                grid-gap: 2rem;
+                grid-gap: 4rem;
                 margin-top: 1rem;
                 margin-bottom: 2rem;
             }
+
+            .description-app-container2 {
+                height: 66vh;
+            }
             .blue-nested1 {
                 grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
             }
 
-            .blue-nested1 img {
-                margin: auto 5.5rem auto 2rem;
+            .blue-nested-image-container {
+                padding: 2rem;
+                justify-items: center;
+                grid-row: 2 / 2;
             }
 
+            .wallet-app-users, .wallet-app-code {
+                width: 28%; 
+            }
+
+            
             .blue-nested1 h3 {
                 margin-top: 2rem;
             }
             .blue-nested2 {
                 grid-template-columns: 1fr;
+                text-align: center;
             }
 
-            .blue-nested2 img {
-                margin: auto 2rem auto 5.2rem;
+            footer {
+                margin-top: 37rem;
+                
             }
+
 
         }
     

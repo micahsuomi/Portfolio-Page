@@ -96,6 +96,7 @@ nav {
 }
 nav ul li {
     padding: 1rem 2rem;
+    font-size: var(--font-size-small)
 }
 
 nav ul li a {

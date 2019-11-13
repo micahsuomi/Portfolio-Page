@@ -201,7 +201,7 @@ nav {
     .line {
         width: 27px;
         height: 3px;
-        margin: 6px;
+        margin: 5px;
         background: black;
     }
 
@@ -227,15 +227,16 @@ nav {
         position:fixed;
 
     }
-
-   
+    
 
     .nav-links li a {
         font-size: var(--font-size-mediumbig);
     }
 
+    
     .nav-links li a:hover {
         color: white;
+
     }
 
     .nav-links.open {
