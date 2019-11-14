@@ -133,6 +133,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     height: 100%;
+    padding: 6rem;
 
 
 }
@@ -143,82 +144,6 @@
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgb(24, 23, 26, 0.2);
 }
-.about-image-1 {
-    background: url("../imgs/coins.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    
-}
-
-
-.about-image-2 {
-    background: url("../imgs/screen-small.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.about-image-3 {
-    background: url("../imgs/architecture-small.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.about-image-4 {
-    background: url("../imgs/iso1-small.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 22rem;
-    width: 100%;
-}
-
-.about-image-5 {
-    background: url("../imgs/elec-small.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-
-    
-}
-
-.about-image-6 {
-    background: url("../imgs/iso3-small.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    
-}
-
-.about-image-7 {
-    background: url("../imgs/identity-small.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    
-}
-
-.about-image-8 {
-    background: url("../imgs/blockchain-5-small.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    height: 22rem;
-
-    
-}
-
-
-
-
 
 .about-header {
     display: block;

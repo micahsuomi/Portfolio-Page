@@ -33,7 +33,7 @@ html {
 :root {
     --primary:#fff;
     --dark:rgb(39, 37, 44);
-    --very-dark:rgb(24, 23, 26);
+    --very-dark:rgb(27, 24, 32);
     --light:rgb(217, 227, 235);
     --very-light: rgb(247, 250, 252);
     --super-light:(#fff);
@@ -197,12 +197,15 @@ nav {
     nav {
         position: relative;
         opacity: transparent;
+        background-color: var(--very-dark);
+        height: 4.9rem;
     }
     .line {
         width: 27px;
         height: 3px;
         margin: 5px;
-        background: black;
+        background: #fff;
+        
     }
 
     .hamburger {
@@ -215,7 +218,7 @@ nav {
     }
 
     .nav-links {
-        background: skyblue;
+        background: var(--very-dark);
         width: 100%;
         height: 100vh;
         flex-direction: column;
@@ -231,6 +234,7 @@ nav {
 
     .nav-links li a {
         font-size: var(--font-size-mediumbig);
+        color: #fff;
     }
 
     
@@ -240,8 +244,8 @@ nav {
     }
 
     .nav-links.open {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         pointer-events: all;
     }
     
