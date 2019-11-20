@@ -5,7 +5,7 @@
 
     &__hamburger-container {
         position: relative;
-        background:white;
+        background: white;
         z-index:10;
         
         }
@@ -24,7 +24,7 @@
              background-color: #fff;
              cursor: pointer;  
              justify-items: center;
-             padding: 1.3rem .8rem;
+             padding: 2.8rem 2.5rem 1rem 1.4rem;
              box-shadow: 0 1.5rem 4rem rgba(32, 31, 31, 0.15); 
              
              @include respond(tab-port) {
@@ -33,7 +33,6 @@
              }
              @include respond (phone) {
                 
-              
                 top: 2.5%;
                 right: 2.5%;
                 padding: 0.75rem 0.3rem;
@@ -44,18 +43,81 @@
 
             
 
-            
+            &__line-container {
+                @include respond(phone) {
+                    margin-top: 2.1rem;
+                    margin-left: 0.9rem;
+                }
+            }
                     
             &__line {
 
-                margin-top: 3rem;
-                width: 30px;
+                margin: 3rem;
+                width: 36px;
                 height: 3px;
-                margin: 6px;
+                margin: -3px;
+                align-self: center;
                 background: $color-black; 
 
-                
+                @include respond (phone) {
+                    width: 30px;
+                  
+
+                }  
  
+            }
+
+            #upper-line {
+                width: 30px;
+                height: 3px;
+                margin-top: -10px;
+                background: $color-black; 
+
+                @include respond(phone) {
+                    width: 25px;
+               
+                }
+
+            }
+
+            #lower-line {
+                width: 30px;
+                height: 3px;
+                padding-right: 2px;
+                background: $color-black; 
+
+                @include respond(phone) {
+                    width: 25px;
+                    top: 1%;
+                    right: 1%;
+                }
+
+            }
+
+            .rotate-1 {
+                transform: rotate(135deg);
+                transition: all .5s ease-out;
+                margin-top: 1rem;
+        
+            }
+        
+            .rotate-3 {
+                transform: rotate(-135deg);
+                transition: all .5s ease-out;
+        
+            }
+
+            .add-margin {
+                padding: .78rem 1.55rem;
+
+                @include respond(phone) {
+                    padding: 0.7rem 0.2rem 1rem 1rem;
+
+                }
+            }
+
+            .make-transparent {
+                display: none;
             }
      
 
@@ -66,28 +128,36 @@
                     -webkit-clip-path: circle(1.0% at 50% 50%);
                     clip-path: circle(1.0% at 50% 50%);
                     transition: all 0.3s ease-out;
-                    opacity: 0.95;
+                    opacity: .93;
                     line-height: 4.08rem;
-                    padding-top: 18%;
+                    padding-top: 13%;
                     @include center-horizontal-vertical;
                     position: fixed;
+                    top: 50%;
+                    left: 50%;
 
                 }
                     &__nav-link {
-                        border: 1px solid $color-white;
+                        border-top: 1px solid $color-white;
                         text-align: center;
-                        opacity: .7;
                         z-index: 2000;
+                        padding: 1.2rem;
+                    }
+
+                    &__nav-link:last-child {
+                        border-bottom: 1px solid $color-white;
                     }
                         &__link {
                             font-size: 31.9px;
                             color: $color-white;
                             text-decoration: none;
                             z-index: 1000;
+                            margin: 1rem;
+
 
                             &:hover {
                                 text-transform: uppercase;
-                                font-weight: 600;
+                                font-weight: 700;
                                 
                             }
                         }
@@ -95,8 +165,7 @@
                    
                         &__nav-links.open {
                             clip-path: circle(152.5% at 48% 1%);
-
-                            background: $color-black;
+                            background: $color-red-dark;
                             height: 100vh;
                             z-index: 2;
                             align-content: center;

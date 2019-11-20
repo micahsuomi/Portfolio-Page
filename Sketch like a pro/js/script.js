@@ -14,7 +14,7 @@ const checkBtn = document.querySelector('.btn-check');
 const timeline = new TimelineMax();
 
 timeline.fromTo(imageContainer, 1, {height: '0%'}, {height: '90%', ease:Power2.easeInOut})
-.fromTo(imageContainer, 1.2, {width: '100%'}, {width: '95%', ease:Power2.easeInOut})
+.fromTo(imageContainer, 1.2, {width: '100%'}, {width: '100%', ease:Power2.easeInOut})
 .fromTo([slider, navBar], 1.2, {x: '-100%'}, {x: '0%', ease: Power2.easeInOut}, "-=1.1")
 .fromTo(logo, 0.5, {opacity: 0, x:30}, {opacity: 1, x: 0}, "-=0.5")
 .fromTo(navItem, 0.5, {opacity: 0, x:30}, {opacity: 1, x: 0}, "-=0.5")

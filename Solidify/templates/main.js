@@ -22,16 +22,34 @@ ScrollReveal().reveal('.punchline', { delay: 1000})
 ScrollReveal().reveal('.punchline2', { delay: 2000})
 
 // toggle navbar
-var hamburger = document.querySelector('.hamburger');
+var hamburger = document.querySelector('.hamburger-bar');
 var navLinks = document.querySelector('.nav-links');
 var links = document.querySelectorAll('.nav-links li');
+var closeNav = document.getElementById('exit');
 
 
-hamburger.addEventListener('click', function() {
-  navLinks.classList.toggle("open");  
+
+hamburger.addEventListener('click', function(e) {
+  navLinks.classList.toggle("open");
+  hamburger.classList.add("hide");
+    e.preventDefault();
 
   
 });
+
+closeNav.addEventListener('click', function(e) {
+    navLinks.classList.toggle("open");
+    hamburger.classList.remove('hide');
+    console.log('working')
+    e.preventDefault();
+});
+
+
+
+
+
+
+
 
 //change front-container color
 

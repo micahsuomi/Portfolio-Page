@@ -18,27 +18,25 @@
 
 </head>
 <body>
-        <!-- <div class="loader">
-                        <h1 class="flipOutX">Thanks in advance for stopping by...</h1>
-                        <img src="robot.png" class="robot flipOutX" alt="">
-        </div> -->
 
     <div class="scroll-container">
          
     <!-- navbar -->
     <nav data-aos="fade-down">
             <ul class="navbar-links">
+
                 <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                    <div id="upper-line"></div>
+                    <div class="line" id="line1"></div>
+                    <div class="line" id="line2"></div>
+                    <div id="lower-line"></div>
                 </div>
             
-                <li class="grow"><a href="#home" data-aos="flip-down">Home</a></li>   
-                <li class="grow"><a href="#about" class="grow">About</a></li>
-                <li class="grow"><a href="#portfolio" class="grow">Portfolio</a></li>
-                <li class="grow"><a href="#skills" class="grow">Skills</a></li>
-                <li class="grow"><a href="#contact" class="grow">Contact</a></li>
+                <li class="nav-link grow"><a href="#home" data-aos="flip-down">Home</a></li>   
+                <li class="nav-link grow"><a href="#about" class="grow">About</a></li>
+                <li class="nav-link grow"><a href="#portfolio" class="grow">Portfolio</a></li>
+                <li class="nav-link grow"><a href="#skills" class="grow">Skills</a></li>
+                <li class="nav-link grow"><a href="#contact" class="grow">Contact</a></li>
             </ul>
 
             
@@ -62,6 +60,7 @@
 
     <!-- About -->
     <div class="about-container headline" id="about">
+
         <div class="about-wrapper">
             
             <div class="about-text" data-aos="fade-right">
@@ -127,9 +126,16 @@
     <div class="portfolio-container headline" id="portfolio" data-aos="fade-right">
             <h2><span class="port-header">Portfo</span>lio Work</h2>
 
-        <div class="portfolio-wrapper">
+        <div class="portfolio-type-wrapper">
+        <div class="portfolio-type-btn-container">
+            <button class="btn-portfolio-type" id="html-btn">HTML, CSS, JavaScript</button>
+            <button class="btn-portfolio-type" id="react-btn">React</button>
 
-                <div class="website-card-container website-hide website grow tagline" data-aos="fade-left">
+        </div>
+
+        <div class="portfolio-wrapper" id="websites-projects">
+
+                <div class="website-card-container website-hide website grow tagline" id="solidify" data-aos="fade-left">
                 <img src="website1_2card.png" alt="">
                    <div class="website_show websiteblur">
                     <div class="website_show-display">
@@ -137,13 +143,13 @@
                        <div class="button-container">
                         <button class="portfolio-btn grow"><a href="Solidify/templates/index.html">View Project</a>
                         </button>
-                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Solidify">View on Github</a></button>
+                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Solidify" target="blank">View on Github</a></button>
                     </div>
                     </div>
                 </div>
                  </div>
         
-            <div class="website-card-container website-hide website grow tagline" data-aos="fade-left">
+            <div class="website-card-container website-hide website grow tagline" id="noirflix" data-aos="fade-left">
                     <img src="website2-card.png" alt="">
                    <div class="website_show websiteblur">
                     <div class="website_show-display">
@@ -151,14 +157,14 @@
                        <div class="button-container">
                         <button class="portfolio-btn grow"><a href="noirflix/templates/landing.html">View Project</a>
                         </button>
-                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Noirflix%20landing%20page">View on Github</a></button>
+                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/noirflix" target="blank">View on Github</a></button>
                     </div>
                     </div>
                 </div>
                  </div>
             
 
-                 <div class="website-card-container website-hide website grow tagline" data-aos="fade-left">
+                 <div class="website-card-container website-hide website grow tagline" id="evenflow" data-aos="fade-left">
                         <img src="website3_2-card.png" alt="">
                         <div class="website_show websiteblur">
                          <div class="website_show-display">
@@ -166,13 +172,13 @@
                             <div class="button-container">
                              <button class="portfolio-btn grow"><a href="evenflow/templates/index.html">View Project</a>
                              </button>
-                             <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/evenflow">View on Github</a></button>
+                             <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/evenflow" target="blank">View on Github</a></button>
                          </div>
                          </div>
                      </div>
                       </div>
                      
-                     <div class="website-card-container website-hide website grow tagline" data-aos="fade-left">
+                     <div class="website-card-container website-hide website grow tagline" id="sketch" data-aos="fade-left">
                             <img src="website4-card.png" alt="">
                             <div class="website_show websiteblur">
                                 <div class="website_show-display">
@@ -180,14 +186,14 @@
                                 <div class="button-container">
                                  <button class="portfolio-btn grow"><a href="Sketch like a pro/templates/index.html">View Project</a>
                                  </button>
-                                 <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Sketch%20like%20a%20pro">View on Github</a></button>
+                                 <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Sketch%20like%20a%20pro" target="blank">View on Github</a></button>
                              </div>
                              </div>
                          </div>
                           </div>
               
 
-                 <div class="website-card-container website-hide website grow tagline" data-aos="fade-left">
+                 <div class="website-card-container website-hide website grow tagline" id="eat" data-aos="fade-left">
                         <img src="website5-card.png" alt="">
                         <div class="website_show websiteblur">
                             <div class="website_show-display">
@@ -195,14 +201,46 @@
                             <div class="button-container">
                              <button class="portfolio-btn grow"><a href="eat.taste.try_Sass/pages/index.html">View Project</a>
                              </button>
-                             <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Solidify">View on Github</a></button>
+                             <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/eat.taste.try_Sass" target="blank">View on Github</a></button>
                             </div>
                          </div>
                          </div>
-                     </div>
+                     </div>       
+            </div>
 
-                          
+            <div class="portfolio-wrapper-2" id="react-projects">
+                    <div class="website-card-container-2 website-hide website grow tagline hide" data-aos="fade-left" id="star">
+                            <img src="react_1-card.png" alt="">
+                            <div class="website_show websiteblur">
+                                <div class="website_show-display">
+                                <h4 class="websitename">STAR WARS API DATA <br> React App</h4>
+                                <div class="button-container">
+                                 <button class="portfolio-btn grow"><a href="https://starwarsapis.netlify.com/" target="blank">View Project</a>
+                                 </button>
+                                 <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Star-Wars-APIs-React-App" target="blank">View on Github</a></button>
+                                </div>
+                             </div>
+                             </div>
+                         </div>
+                         <div class="website-card-container-2 website-hide website grow tagline hide" data-aos="fade-left" id="crypto">
+                            <img src="crypto.png" alt="">
+                            <div class="website_show websiteblur">
+                                <div class="website_show-display">
+                                <h4 class="websitename">Crypto Dashbord <br> React App</h4>
+                                <div class="button-container">
+                                    <h4 class="websitename">In Progress</h4>
+                                 <!-- <button class="portfolio-btn grow"><a href="star-wars-data/public/index.html">View Project</a>
+                                 </button>
+                                 <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Solidify">View on Github</a></button> -->
+                                </div>
+                             </div>
+                             </div>
+                         </div>  
+                         <div></div>    
+                         <div></div>    
+                         <div></div>    
 
+            </div>
         </div>
     </div>
     <!-- Skills -->

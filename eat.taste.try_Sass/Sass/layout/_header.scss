@@ -7,8 +7,10 @@
         rgb(13, 14, 13)) , url("../imgs/background-hero.jpg");
         background-size: cover;
         height: 100vh;
-        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+        // clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+        -webkit-clip-path: ellipse(58% 74% at 54% 25%);
+        clip-path: ellipse(58% 74% at 54% 25%);
         background-position: top;
         position: relative;
         justify-content: center;
