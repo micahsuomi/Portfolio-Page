@@ -14,48 +14,51 @@
     
     <!-- navbar -->
         <nav class="navbar hideonload">
+            <div class="hamburger-bar hide-desktop show-tablet">
+                <i class="fas fa-bars fa-4x"></i>
+              </div>
+
+            
             <div class="navbar-brand-img"><a href="#home"><img src="../imgs/logo.png" alt="sketch logo" id="logo" class="hide-mobile"></a></div>
           
               <ul class="navbar-links">
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Galleries</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tablet-container">Tablet reviews</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sign-up-container">Sign Up</a></li>
+                  <li class="navbar-close hide-desktop show-tablet" id="exit">
+                      <i class="far fa-times-circle fa-4x"></i> 
+                  </li>
+                <li class="nav-item grow"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item grow"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item grow"><a class="nav-link" href="#gallery">Galleries</a></li>
+                <li class="nav-item grow"><a class="nav-link" href="#tablet-container">Tablet reviews</a></li>
+                <li class="nav-item grow"><a class="nav-link" href="#sign-up-container">Sign Up</a></li>
               </ul>
-              <div class="navbar-open hide-desktop show-mobile">
-                  <i class="fas fa-bars fa-4x hamburger-bar"></i>
-    
-                </div>
-                <div class="navbar-close hide-desktop hide-mobile">
-                    <i class="fas fa-times-circle fa-4x hamburger-bar-close"></i> 
-
-                </div>
+            
             </div>
           </nav>
-
     </header>
 
     <!-- Header -->
-    <section class="front-end-container">
-
-    <div class="container-image">  
+    <section class="front-end-container show-desktop hide-mobile">
+   
+    <div class="container-image hide-tablet">  
       <div class="row">
-          <div class="hide-desktop">
-              <img src="../imgs/manga.2.back-min.png" alt="manga image" class="manga image-fluid hide-desktop show-tablet">
-          </div>
-
-          <div class="liquid-image show-desktop hide-tablet">&nbsp;</div>
-      
+          <div class="hide-desktop"></div>
+          <div class="liquid-image show-desktop hide-tablet"></div>
+        </div>
           <div class="header-container">
                 <h1 class="header-primary">Sketch Like a Pro</h1>
                 <p class="subheading">A Community for Digital Artists</p>
                 <a href="#about"><button type="button" class="btn-check"><img src="../imgs/Down arrow.png"></i></button></a>
           </div>
         </div>
+        <div class="header-primary show-tablet hide-desktop show-mobile">
+            <h1 class="hide-desktop show-tablet show-mobile">Sketch Like a Pro</h1>
+            <p class="hide-desktop show-tablet">A Community for Digital Artists</p>
+            <a href="#about" class="hide-desktop show-tablet"><button type="button" class="btn-check"><img src="../imgs/Down arrow.png"></i></button></a>
+          </div>  
       </section>
-
+     
         <div class="slider-container">&nbsp;</div>
+
 
 <!-- About -->
 
@@ -64,7 +67,7 @@
   <div class="about-wrapper">
 
     <div class="about-paragraph">
-      <h3>About</h3>
+      <h3 class="about-header">About</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maxime hic dolorum ratione, quidem      architecto placeat odio esse alias amet ullam soluta, provident animi quos fugit eum aliquam      reprehenderit, modi aliquid libero quisquam! Libero vero, temporibus reiciendis nostrum nemo hic    deleniti repellat delectus et quisquam cum animi aspernatur, dolor veniam incidunt exercitationem.       Impedit blanditiis quaerat quis veniam ad eveniet ipsum quidem id perferendis non magni, sint       voluptate cumque quos fugit!<br><br>
 
             Impedit blanditiis quaerat quis veniam ad eveniet ipsum quidem id perferendis non magni, sint  voluptate cumque quos fugit! Impedit blanditiis quaerat quis veniam ad eveniet ipsum quidem id    perferendis non magni, sint voluptate cumque quos fugit!<br><br>

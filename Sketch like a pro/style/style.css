@@ -42,6 +42,7 @@ body {
     --darkblack: rgb(8, 6, 6);
     
     --font-size-big: 4rem;
+    --font-size-medium-big: 3rem;
     --font-size-medium: 2rem;
     --font-size-small: 1.6rem;
     --font-size-verysmall: 1.2rem;
@@ -79,7 +80,8 @@ body {
 
 #mainNavbar {
     opacity: 0.9;
-    background: linear-gradient(to left, #33383D, rgb(28, 29, 31))!important;
+    background: linear-gradient(to left, 
+    #33383D, rgb(28, 29, 31))!important;
 }
 
 .navbar ul li {
@@ -97,27 +99,13 @@ ul {
     padding: 0;
 }
 
-.sign-log {
-    display: flex;
-    margin-top:0.5rem;
-   
-}
-
-.sign-log a {
-    text-decoration: none;
-    color: var(--grey);
-    opacity: 0.7;
-}
-
-.sign-log a:hover {
-    color: white;
-    text-decoration: none;
-
-}
-
 .navbar-toggler {
-    background: #fff!important;
+    height: 4rem!important;
+    width: 4rem!important;
+    color: #fff!important;
+    background-color: white;
 }
+
 .container {
     width: 100%;
     overflow-y: scroll;
@@ -130,8 +118,6 @@ ul {
     height: 1.5rem;
     margin-top: 0.8rem;
 }
-
-
 
 .logo {
     width: 130px;
@@ -162,16 +148,6 @@ header {
 }
 
 
-/*Front page*/
-
-/* .scroll-container {
-    width: 100%;
-    height: 100%;
-    /*CSS Smooth Scroll */
-    /* overflow-y: scroll;
-    scroll-behavior: smooth; 
-    scroll-snap-type: y mandatory;
-}  */
 
 .front-end-container {
     height: 100vh;
@@ -183,8 +159,6 @@ header {
     text-align: center;
     position: relative;
     background-color: white;
-    /* background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(245, 241, 241, 0.8)), 
-    url("../imgs/background1.jpg"); */
     background-size:cover;
     background-position: top;
     width: 100%;
@@ -196,14 +170,6 @@ header {
     height: 100%;
     object-fit: cover;
 }
-
-
-
-.manga {
-    width: 75%;
-    padding-left:10px;
-    
-} 
 
 .liquid-image {
     width: 560px;
@@ -220,8 +186,7 @@ header {
     right: 23%;
     transform: translate(44%,44%);
     text-align: center;
-
-    
+   
 }
 
 
@@ -819,7 +784,8 @@ header {
 
     .container-image {
         height: 100vh;        
-        background-image: linear-gradient(to right bottom, rgba(49, 32, 32, 0.2), rgba(245, 241, 241, 0.2)), 
+        background-image: linear-gradient(to right bottom,
+        rgba(49, 32, 32, 0.2), rgba(245, 241, 241, 0.2)), 
         url("../imgs/manga.jpg");
           
         }
@@ -885,7 +851,6 @@ header {
     .tablet-card {
         height: 78rem;
 
-
     }
 
     .community-container {
@@ -903,20 +868,77 @@ header {
     }
 }
 
+@media(max-width: 850px) {
+
+    #mainNavbar {
+        opacity: 1;
+    }
+    .navbar-collapse {
+        height: 100vh;
+    }
+    
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin-top: 40%;
+
+    }
+    
+    .nav-link {
+        font-size: var(--font-size-medium-big);
+    }
+    
+    .nav-item a:hover {
+        background-color: var(--darkblack)!important;
+    }
+
+    .front-end-container {
+        padding: 0;
+    }
+
+    .manga {
+        width: 111%;
+        height: 50vh;
+    }
+
+    .heading {
+        position: absolute;
+        top: 171%;
+        right: -6%;
+        transform: translate(44%,211%);
+        text-align: center;
+       
+    }
+
+
+    .heading .heading-primary, 
+    .subhead {
+        color: #fff;
+        text-shadow: 0 2rem 4rem rgb(14, 13, 13);
+    
+    }
+
+    .heading .heading-primary {
+        font-size: 5rem;
+
+    }
+
+    .heading .subhead {
+        font-size: var(--font-size-medium-big);
+    }
+
+    
+}
 @media(max-width:768px) {
 
-     
     .gallery-container .gallery-image {
         width: 98%;
     }
 
     .container-image {
-        height:100vh;
-    }
-
-    .manga {
-        width: 77%;
-        margin-top: 5rem;
+        height: 70vh;
     }
 
     .heading h1 {
@@ -963,12 +985,6 @@ header {
         margin-left: -0.8rem;
     }
 
-
-    .manga {
-        width: 95%;
-        height:100%;
-    }
-   
     .heading h1 {
         font-size: var(--font-size-big);
         letter-spacing: .1rem;
