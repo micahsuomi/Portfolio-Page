@@ -2,18 +2,20 @@
 /* About */
 
 .about-container {
-    padding: 8rem;
+    padding: 8rem 8rem;
     height: 100vh;
 }
 .about-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 80vh;
+    align-items: center;
 }
 
 .nested-about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 250px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
     height: 100%;
 }
 
@@ -28,17 +30,13 @@
 }
 .nested-child-img3 {
     background: url("../imgs/blue.jpg")no-repeat center center/cover;
-   
-    
-}
-.nested-child-4imgs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+      
 }
 
 .nested-child-img4 {
-    background: url("../imgs/adult-cap-dark-838696\ \(1\).jpg")no-repeat center center/cover;
+    background: url("../imgs/adolescent-attractive-backpack-1462633.jpg")no-repeat center center/cover;
     
 }
 .nested-child-img5 {
@@ -46,11 +44,61 @@
     
 }
 .nested-child-img6 {
-    background: url("../imgs/front-image.jpg")no-repeat center center/cover;
+    background: url("../imgs/adult-beautiful-blonde-1667761.jpg")no-repeat center center/cover;
+
     
 }
 .nested-child-img7 {
+    background: url("../imgs/audio-close-up-electronics-1389429.jpg")no-repeat center center/cover;
+    
+}
+
+.nested-child-img8 {
+    background: url("../imgs/background2.jpg")no-repeat center center/cover;
+    
+}
+
+.nested-child-img9 {
+    background: url("../imgs/front-image.jpg")no-repeat center center/cover;
+    grid-column: 1 / 3;
+    grid-row: 3;
+    
+    
+}
+
+.nested-child-img10 {
     background: url("../imgs/headphones.jpg")no-repeat center center/cover;
+    grid-row: 3  span;
+
+    
+}
+
+.nested-child-img11 {
+    background: url("../imgs/artist-black-dress-concert-1808704.jpg")no-repeat center center/cover;
+    
+}
+
+.nested-child-img12 {
+    background: url("../imgs/audience-band-blur-736355.jpg")no-repeat center center/cover;
+    
+}
+
+.nested-child-img13 {
+    background: url("../imgs/mc-img.jpg")no-repeat center center/cover;
+    
+}
+
+.nested-child-img14 {
+    
+}
+
+.nested-child-img15 {
+    background: url("../imgs/headphones.jpg")no-repeat center center/cover;
+    
+}
+
+.nested-child-img16 {
+    
     
 }
 .about-text {
@@ -70,6 +118,10 @@
     color: var(--dark);
 }
 
+.about-btn-container {
+    display: flex;
+    justify-content: center;
+}
 .about-btn {
 
     background:var(--pink);
