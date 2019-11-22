@@ -32,7 +32,6 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
 
 }
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500');
@@ -92,7 +91,7 @@ body {
 nav {
     position: fixed;
     background:#fff;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
     height: 40px;
     text-align: center;
@@ -133,7 +132,7 @@ nav ul li a:hover {
     background: url("../imgs/background2.png");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     -webkit-clip-path: circle(60.5% at 42% 0);
     clip-path: circle(60.5% at 42% 0);
@@ -1040,7 +1039,7 @@ nav ul li a:hover {
     .portfolio-container {
         height: 510rem;
         margin-top: -3rem;
-        padding: 5rem;
+        padding: 1rem 2rem;
         -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
 
