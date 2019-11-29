@@ -1,0 +1,153 @@
+.form-container {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(241, 221, 220, 0.8), rgba(236, 211, 191, 0.8)), url("../imgs/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+
+}
+
+
+.form-container-top {
+    grid-row: 4 / 7;
+    grid-column: 2 / 2;
+}
+
+.form-header {
+    transform: rotate(-90deg);
+    font-size: var(--font-size-big);
+    color: var(--darker);
+
+}
+form {
+    
+    background-image: linear-gradient(rgba(250, 241, 241, 0.8), rgba(236, 211, 191, 0.8));
+    grid-row: 2 / 8;
+    grid-column: 3 / 9;
+    box-shadow: 0 2rem 4rem rgba(102, 94, 88, 0.7);
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    line-height: 1.6;
+    position:relative;
+
+}
+
+.form-left {
+    background-image: linear-gradient(rgba(193, 85, 243, 0.8), rgba(27, 24, 27, 0.8)), url("../imgs/cracks-design-exterior-941552@2x.png");    background-size: cover;
+    background-position: center;
+    background-color: var(--dark);
+    background-size: cover;
+    background-position: center; 
+    padding: 10rem 6rem;
+
+}
+ 
+label {
+    font-size: var(--font-size-medium-small);
+    font-weight: 700;
+    color: white;
+    
+}
+
+
+
+.form-small-header {
+    font-size: var(--font-size-medium);
+    color: var(--dark);
+}
+
+.form-small-header-white {
+    font-size: var(--font-size-medium);
+    color: white;
+}
+
+.input {
+    height: 3rem;
+    width: 20rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 3px;
+
+}
+
+.form-right {
+    padding: 9rem 6rem;
+    background: white;
+
+
+}
+
+.checkbox-wrapper {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 8rem;
+    margin-left: 2rem;
+    align-items: center;
+
+}
+.checkbox {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 2rem;
+}
+
+.user-container {
+    margin-top: 2rem;
+}
+
+.radio-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.radio {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+}
+
+.thick-label {
+    margin-left: .8rem;
+    font-size: var(--font-size-medium-small);
+    color: var(--dark);
+}
+
+.label-white {
+    margin-left: .8rem;
+}
+
+.button-container {
+    position: absolute;
+    justify-self: center;
+    top: 80%;
+}
+
+.btn-subscribe {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    width: 18rem;
+    border: none;
+    background-color: var(--pink-darker);
+    font-weight: 700;
+    font-size: var(--font-size-small);
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-subscribe:hover {
+    background-color: var(--pink);
+
+
+}
+
+
+
+
+
