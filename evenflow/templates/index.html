@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <link rel="stylesheet" href="../style/normalize.css">
     <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -13,7 +14,8 @@
 </head>
 <body>
     
-            <nav>
+<div class="wrapper">
+    <nav>
                     <div class="hamburger">
                         <div class="line"></div>
                         <div class="line"></div>
@@ -28,14 +30,14 @@
                         <li><a href="about.html" class="grow">About</a></li>
                         <li><a href="albums.html" class="grow">Albums</a></li>
                         <li><a href="live.html" class="grow">Live</a></li>
-                        <li><a href="#" class="grow">Contact</a></li>
+                        <li><a href="contact.html" class="grow">Contact</a></li>
         
         
                     </ul>
         
-                </nav>
+    </nav>
 
-        <div class="front-container">
+    <header class="front-container">
             <div class="front-header">
                 <div><img src="../imgs/EVENFLOW@2x.png" class="band-title" alt=""></div>
                 <div><h2>New EP Out Now</h2></div>
@@ -49,10 +51,10 @@
             </button>
            
             </div>
-        </div>
-    </div>
+        </header>
 
     <!-- New Album -->
+    <main>
     <div class="container-album">
 <h2>New Album</h2>
 <div class="album">
@@ -70,9 +72,9 @@
 
     <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis officiis facilis sequi cupiditate laudantium incidunt animi alias. Amet cumque molestiae repudiandae eius quia, accusantium saepe error nesciunt quas architecto, inventore rerum neque corrupti! Illum quo ex quas cumque. Quibusdam, deleniti quidem. Assumenda ex exercitationem, porro corporis, iure beatae, dolore doloremque ducimus vel veniam asperiores in ad voluptatibus ipsam? Harum, natus. Libero impedit iusto a quaerat optio quis temporibus assumenda.</p></div>
 </div>
-</div>
+    </div>
 
-<div class="new-tracks-container">
+    <div class="new-tracks-container">
 <h2 class="tracks-headline">New Tracks</h2>
 
 <div class="new-tracks">
@@ -126,10 +128,10 @@
     </div>
     
 </div>
-</div>
+    </div>
 
 
-<div class="dark-container">
+    <div class="dark-container">
     <div class="icon-container">
         <div class="icon-nested">
             <div class="icon"><img src="../imgs/cloud.png" class="icon1" alt=""></div>
@@ -144,9 +146,9 @@
             <p class="icon-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error adipisci cupiditate ex labore aliquam. Omnis quis accusantium error facere distinctio.</p>
         </div>
     </div>
-</div>
+    </div>
 
-<section class="dates-container">
+    <section class="dates-container">
 <h4 class="dates">Upcoming Dates</h4>
 <div class="dates-box1">
     <div class="nested-box1">
@@ -197,9 +199,9 @@
             </div>
         
 </div>
-</section>
+    </section>
 
-<div class="posts-container">
+    <div class="posts-container">
 <div class="posts-wrapper">
     <div class="post">
         <img src="../imgs/img-post1.png">
@@ -267,14 +269,14 @@
         
             </div>
         </div>
-</div>
+    </div>
 
-<div class="listen-now">
+    <div class="listen-now">
     <h2>New EP - Loosely</h2>
     <div><button class="btn-listen">Listen Now</button></div>
-</div>
+    </div>
 
-<div class="rec-map container">
+    <div class="rec-map container">
 <div class="rec-map-wrapper">
     <div class="nested-rec">
         
@@ -292,12 +294,13 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, doloremque?</p>
 </div>
 </div>
-</div>
+    </div>
 
-<div class="back-to-portfolio-box">
+    <div class="back-to-portfolio-box">
         <a href="../../index.html" class="btn btn-back-to-portfolio">&larr;Back to portfolio page</a>
 
-</div>
+    </div>
+</main>
         <footer class="dark-footer">
             <div class="grid-footer">
                 <div>
@@ -306,11 +309,11 @@
         </div>
         <div class="social">
             <h5>Follow Us</h5>
-            <i class="fab fa-spotify social-icons"></i>
-            <i class="fab fa-facebook-square social-icons"></i>
-            <i class="fab fa-instagram social-icons"></i>
-            <i class="fab fa-twitter social-icons"></i>
-            <i class="fab fa-medium social-icons"></i>
+            <i class="fab fa-spotify fa-2x social-icons"></i>
+            <i class="fab fa-facebook-square fa-2x social-icons"></i>
+            <i class="fab fa-instagram fa-2x social-icons"></i>
+            <i class="fab fa-twitter fa-2x social-icons"></i>
+            <i class="fab fa-medium fa-2x social-icons"></i>
         </div>
             <div>
             <h6 class="terms">Terms of Use</h6>
@@ -318,7 +321,6 @@
         </div>
         </footer>
     </div>
-</div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <script src="../js/main.js"></script>

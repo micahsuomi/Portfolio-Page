@@ -1,30 +1,101 @@
 /*Live*/
 
 .live-front-container {
-    padding: 12rem;
-    height: 67rem;
+    padding: 9rem 9rem;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 129, 119, 0.5), rgba(255,255,255, .2)), url("../imgs/live.jpg");
+    background-size: cover;
+    background-position: center;
+
 }
 
-.live-front {
+.live-front-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
     justify-items: center;
+    box-shadow: 0 2rem 4rem rgba(145, 136, 136, 0.3);
 }
 
-.live-front-image {
-    width: 81%;
-
-}
-
-.concert-right-container {
+/* LIVE FRONT LEFT */
+.live-front {
+    background-image: linear-gradient(rgba(255, 129, 119, 0.8), rgba(255,255,255, .3)), url("../imgs/live.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+
+}
+
+.live-front-header {
+    color: white;
+    font-size: var(--font-size-medium);
+
+}
+
+.live-front-subheader {
+    color: white;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 1rem;
+
+}
+
+.live-social-header {
+    margin-top: 1rem;
+}
+
+.live-social-container {
+    margin-top: 2rem;
+}
+
+.live-social-container .social-icons {
+    margin-top: 1.5rem;
+}
+
+.btn-live-front-dates {
+    padding: 1.8rem;
+    border: none;
+    background-color: var(--pink-darker);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 2rem;
+    
+}
+
+.btn-live-front-dates a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-live-front-dates:hover {
+    background-color: var(--pink);
+    transform: translateY(-.1rem);
+}
+
+/* LIVE FRONT RIGHT */
+.concert-right-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .concert-right-box {
     padding: 3rem;
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+    background-color: white;
+}
+
+.concert-right-box-header {
+    color: var(--dark);
+    font-size: var(--font-size-small);
 }
 .live-front h3 {
     color: var(--dark);
@@ -32,12 +103,13 @@
     text-transform: uppercase;
 }
 
-.live-front p {
-    margin-top: 3rem;
-    font-size: var(--font-size-small);
+.live-front-paragraph {
+    margin-top: 1rem;
+    font-size: var(--font-size-verysmall);
     color: var(--dark);
     opacity: 0.8;
-    line-height: 1.8;
+    line-height: 1.6;
+
 }
 
 .comments-line ul {
@@ -57,10 +129,18 @@
 
 .share {
     margin-left: 18rem;
+    cursor:pointer;
 }
 
 .more {
     margin-left: 2rem;
+    cursor:pointer;
+
+}
+
+.share:hover,
+.more:hover {
+    color: var(--pink-darker);
 }
 
 .response {
@@ -76,9 +156,35 @@
 }
 
 
+.concert-right-box-small-section-1 {
+    background-image: linear-gradient(rgba(223, 167, 63, 0.8), rgba(255,255,255, .9)), url("../imgs/livecard1.png");
+    background-size: cover;
+    background-position: bottom;
+   
+
+}
+
+.concert-right-box-small-section-2 {
+    background-image: linear-gradient(rgba(141, 83, 50, 0.8), rgba(255,255,255, .9)), url("../imgs/livecard6.png");
+    background-size: cover;
+    background-position: center;
+  
+
+}
+
+.concert-right-box-small-section-3 {
+    background-image: linear-gradient(rgba(170, 125, 207, 0.8), rgba(255,255,255, .9)), url("../imgs/card3-live.png");
+    background-size: cover;
+    background-position: center;
+  
+
+}
+
 .body-front-live {
     background-image: linear-gradient(45deg, #8baaaa 30%, #ae8b9c 100%);    
     padding: 1rem;
+    grid-row: 2 / 3;
+    grid-column: 3 / 3;
 }
 
 .body-front-live ul {
@@ -105,13 +211,15 @@
     padding: 2rem;
     padding-bottom: 1rem;
     opacity: 0.8;
-    margin-top: -1.8rem;
+    margin-top: 1rem;
     font-size: var(--font-size-verysmall);
+    line-height: 1.5;
 }
 
 
 /* live posts cards 1 */
 .live-posts1-container {
+    margin-top: 15rem;
     padding: 12rem;
     height: 100rem;
 }
@@ -235,7 +343,7 @@
 
 .quicklor {
     text-transform: uppercase;
-    font-size: var(--font-size-verysmall);
+    font-size: var(--font-size-small);
     font-weight: 600;
 }
 
@@ -408,6 +516,7 @@
     padding: 1rem;
     color:var(--dark);
     opacity: 0.6;
+    line-height: 1.7;
 }
 
 .comment-btn {
@@ -427,24 +536,32 @@
 
 .comment-box-bottom {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 30% 70%;
+    align-items: center;
 }
 
 .comment-box-bottom img {
-    width: 40%;
+    width: 50%;
     margin: 2rem;
 }
 
 .comment-box-bottom h6 {
-    margin: auto auto;
     color:var(--dark);
 }
 
 @media(max-width: 1204px) {
 
     .live-front-container {
-        height: 55vh;
+        height: 100vh;
+
     }
+
+    .live-front-wrapper {
+        grid-template-columns: 1fr;
+        margin-top: 8rem;
+
+    }
+
     .live-front-image {
         width: 100%;
         height: 100%;
@@ -452,26 +569,15 @@
 }
 @media(max-width: 768px) {
 
-    .live-front-container {
-        height: 150rem;
-    }
-
-
-    .live-front {
-        grid-template-columns: 1fr;
-    }
-
-
     .live-posts1-container {
-        height: 286rem;
+        height: 90vh;
+        padding: 1rem;
     }
-    .live-posts-cards {
-        grid-template-columns: 1fr;
-        grid-gap: 1rem;
-    }
+    
 
     .live-posts2-container {
-        height: 290rem;
+        height: 90vh;
+        padding: 1rem;
     }
 
     .live-card-wrapper {
@@ -531,10 +637,10 @@
         margin-top: .0001rem;
     }
 
-
     .live-front-container {
-        height: 135rem;
-        padding: 7rem 4rem;
+        padding: 0;
+        height: 80vh;
+        margin-top: -2.9rem;
     }
 
     .concert-right-box {
@@ -542,18 +648,24 @@
     }
 
     .live-posts1-container {
-        padding: 4rem;
-        margin-top: 1rem;
-        width: 100%;
-        height: 266rem;
+        padding: 5rem;
+        padding-top: 22rem;
+        height: 300rem;
 
     }
 
     .live-posts2-container {
         padding: 4rem;
         margin-top: 0.1rem;
+        height: 300rem;
+
     }
 
+    .live-posts-cards {
+        grid-template-columns: 1fr;
+
+
+    }
     .live-card-body img {
         width: 40%;
     }
