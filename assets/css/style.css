@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +5,6 @@
 }
 
 html {
-    box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 62.5%;
     
@@ -44,7 +42,7 @@ body {
     --light: rgb(250, 245, 245);
     --dark: rgb(51, 42, 42);
     --dark-transparent:rgb(51, 42, 42, .6);
-    --dark-shaded: linear-gradient(120deg, #383434 0%, #1d1a1a 100%);
+    --dark-shaded: linear-gradient(120deg, rgb(56, 52, 52) 0%, rgb(29, 26, 26) 100%);
     --shadow-faded:linear-gradient(120deg, #a59090 0%, #856969 100%);
     --shadow: rgb(104, 64, 64);
     --hover: rgb(135, 206, 235);
@@ -62,19 +60,17 @@ body {
 }
 
 
-.scroll-container {
-    width: 100%;
-    height: 100%;
-    /*CSS Smooth Scroll */
-    overflow-y: scroll;
-    scroll-behavior: smooth; 
-    scroll-snap-type: y mandatory;
+.wrapper {
+    min-height: 100%;
     overflow: hidden;
+    position: relative;
 
 }
 
 .show {
     display: block;
+    animation: disappear;
+
 
 }
 
@@ -82,6 +78,8 @@ body {
 
 .hide {
     display: none;
+    animation: disappear;
+
     
 
 }
@@ -225,22 +223,26 @@ nav ul li a:hover {
 
 .about-container {
     margin-top: 10rem;
-    padding: 5rem;
     
 }
 .about-wrapper {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-gap: 0;
     justify-content: center;
     justify-items: center;
     align-items: center;
 }
 
 .about-text {
-    background: var(--dark-shaded);
+    /* background: var(--dark-shaded); */
+    background-image: linear-gradient(rgba(56, 52, 52, 0.9), rgba(29, 26, 26, .9)), url("  https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     padding: 6rem 8rem;
     clip-path: polygon(0 0, 100% 0, 87% 100%, 0 100%);
-    height: 96%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 87% 100%, 0 100%);
+    height: 45em;
+
+    
 
 }
 .about-wrapper h2 {
@@ -260,13 +262,41 @@ nav ul li a:hover {
 }
 
 .about-image {
-    background: url("../imgs/profile2.JPG");
     background-size: cover;
     background-position: top;
-    height: 90vh;
-    width: 80%;
-    top: 4%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
+    height: 45em;
+    width: 65em;
 }
+
+.profile-1-image__container {
+    background-image: linear-gradient(rgba(255, 129, 119, 0.5), rgba(255,255,255, .2)), url("/assets/imgs/profile2.JPG");
+    background-size: cover;
+    background-position: center;
+    grid-row: 1 / 4;
+    grid-column: 1 / 3;
+}
+
+.profile-2-image__container {
+    background-image: linear-gradient(rgba(163, 176, 231, 0.5), rgba(255,255,255, .2)), url("/assets/imgs/profile1.JPG");
+    grid-row: 1 / 3;
+    grid-column: 3 / 5;
+    background-size: cover;
+    background-position: top;
+}
+
+.profile-3-image__container {
+    background-image: linear-gradient(rgba(219, 255, 119, 0.5), rgba(255,255,255, .2)), url("/assets/imgs/background2.png");
+    grid-row: 3 / 3;
+    grid-column: 3 / 3;
+    background-size: cover;
+    background-position: top;
+}
+
 
 /*ICONS SECTION*/
 
@@ -328,10 +358,9 @@ nav ul li a:hover {
 
 /* portfolio */
 .portfolio-container {
-    background:url("portfolio-background.png") no-repeat center center/cover;
+    background:url("../imgs/portfolio-background.png") no-repeat center center/cover;
     margin-top: 2rem;
     padding: 7rem 0;
-    height: 100rem;
     -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
     position: relative;
@@ -383,12 +412,19 @@ nav ul li a:hover {
     grid-gap: 0.5rem;
     position: absolute;
     padding: 0 3rem 0 0;
+    animation: disappear;
+    transition: all ease-in-out 2s;
     
+}
+
+@keyframes disappear {
+    from {opacity:0;} to {opacity: 1;}
 }
 
 .website-card-container {
     position: relative;
     box-shadow: 3rem 2rem 3rem rgba(0, 0, 0, 0.6); 
+    animation: disappear;
     
 }
 
@@ -584,7 +620,6 @@ nav ul li a:hover {
 
 .contact-container {
     padding: 6rem;
-    height: 100vh;
 
 
 }
@@ -743,7 +778,7 @@ nav ul li a:hover {
     .frontpage-container {
     -webkit-clip-path: circle(80.5% at 42% 0);
     clip-path: circle(80.5% at 42% 0);
-    height:80vh;
+    height: 40vh;
 
     }
 
@@ -754,9 +789,25 @@ nav ul li a:hover {
     }
 
     .about-container {
-        height: 80vh;
+        margin-top: -4rem;
+    }
+
+    .about-container .about-text {
+        height: 50rem;
+        padding: 4rem;
+    }
+
+    .about-container .about-image {
+        height: 50rem;
+    }
+
+    .portfolio-container {
+        padding: 16rem 0rem;
     }
    
+    .portfolio-type-wrapper {
+        height: 35vh;
+    }
 
 }
 
@@ -769,34 +820,7 @@ nav ul li a:hover {
 }
 
 @media(max-width: 850px) {
-
-  
-    
-    .make-transparent {
-        display: none;
-
-    
-    }
-    
-    .rotate-1 {
-        transform: rotate(135deg);
-        transition: all .5s ease-out;
-        margin-top: 1rem;
-
-    }
-
-    .rotate-3 {
-        transform: rotate(-135deg);
-        transition: all .5s ease-out;
-
-    }
-
-    .add-margin {
-        margin-top: .8rem;
-    }
-
-    
-    
+ 
     nav {
         position:relative;
         opacity: transparent;
@@ -870,30 +894,51 @@ nav ul li a:hover {
 
     }
 
-    .about-container {
-        height: 185rem;
+    /* Cross animation when hamburger is clicked */
+    .make-transparent {
+        display: none;
+    
+    }
+    
+    .rotate-1 {
+        transform: rotate(135deg);
+        transition: all .5s ease-out;
+        margin-top: 1rem;
     }
 
-    .about-image {
-        height: 70rem;
-        margin-top: 18rem;
+    .rotate-3 {
+        transform: rotate(-135deg);
+        transition: all .5s ease-out;
+
     }
 
+    .add-margin {
+        margin-top: .8rem;
+    }
+
+    .frontpage-container {
+        height: 20vh;
+    }
+
+    .about-text p {
+        padding: 2rem;
+    }
+    
+  
     .about-wrapper {
-        grid-template-columns: 1fr;
-    }
+        grid-template-columns: 50% 50%;
+    } 
 
-    .about-wrapper .about-text p{
-        margin: auto 4rem;
-    }
+
     .about-wrapper2 {
         grid-template-columns: repeat(2,1fr);
     }
 
-    .portfolio-container {
-        height: 100%;
-    }
+
     
+    .portfolio-type-wrapper {
+        height: 220vh;
+    }
 
     .skills-container {
         padding: 0 0;
@@ -920,7 +965,6 @@ nav ul li a:hover {
     }
     
     .portfolio-container {
-        height: 100%;
         -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
         margin-top: -3rem;
@@ -1007,20 +1051,19 @@ nav ul li a:hover {
     }
     .about-wrapper {
         grid-template-columns: 1fr;
-        padding: 2rem 0;
+        padding: 5rem 0;
         margin: 0 0;
     }
 
     .about-image {
-        margin-top: 2rem;
-        height: 100rem;
+        margin-top: 0;
+        height: 50rem;
        
     }
 
     .about-wrapper .about-text {
         clip-path: none;
-        padding: 1rem;
-        height: 70rem;
+        padding: 7rem;
         
     }
 
@@ -1031,21 +1074,23 @@ nav ul li a:hover {
         margin: auto -1rem;
     }
 
+    .about-wrapper .about-image {
+        clip-path: none;
+    }
     
     .about-wrapper2 {
         grid-template-columns: 1fr;
         
     }
     .portfolio-container {
-        height: 510rem;
         margin-top: -3rem;
         padding: 1rem 2rem;
         -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
 
-
     }        
     
+
     .portfolio-container h2 {
         padding-top: 12rem;
         color: var(--light);
@@ -1054,6 +1099,10 @@ nav ul li a:hover {
 
     .port-header {
         color: var(--light);
+    }
+
+    .portfolio-type-wrapper {
+        height: 426vh;
     }
     .portfolio-wrapper, 
     .portfolio-wrapper-2 { 
@@ -1106,11 +1155,9 @@ nav ul li a:hover {
 
 
     .contact-container {
-        margin-right: -3rem;
-        margin-left: -3rem;
         padding: 2rem;
-
-    } 
+    
+    }
     
     .link-img {
         width: 24rem;
@@ -1142,11 +1189,7 @@ nav ul li a:hover {
         padding: 0.3;
     }
 }
-@media(max-width:360px) {
-    .portfolio-container {
-        height: 480rem;
-    }
-}
+
 @media(max-width:320px) {
 
     .hamburger {
