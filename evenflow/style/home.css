@@ -555,7 +555,7 @@
 
 .post-icons .post-icons-img-1 {
     padding-right: 2.2rem;
-    fill: var(--pink);
+    color: var(--pink);
     cursor: pointer;
 
 }
