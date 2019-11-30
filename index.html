@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,339 +12,252 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <script>
-		ScrollReveal({ duration: 1000 })
-	</script>
-
-
+        ScrollReveal({
+            duration: 1000
+        }) 
+    </script>
 </head>
+
 <body>
+    <div class="wrapper">
+        <!-- navbar -->
+        <nav data-aos="fade-down">
 
-    <div class="wrapper">          
-    <!-- navbar -->
-    <nav data-aos="fade-down">
             <ul class="navbar-links">
-
                 <div class="hamburger">
                     <div id="upper-line"></div>
                     <div class="line" id="line1"></div>
                     <div class="line" id="line2"></div>
                     <div id="lower-line"></div>
                 </div>
-            
-                <li class="nav-link grow"><a href="#home" data-aos="flip-down">Home</a></li>   
+                <li class="nav-link grow"><a href="#home" data-aos="flip-down">Home</a></li>
                 <li class="nav-link grow"><a href="#about" class="grow">About</a></li>
                 <li class="nav-link grow"><a href="#portfolio" class="grow">Portfolio</a></li>
                 <li class="nav-link grow"><a href="#skills" class="grow">Skills</a></li>
                 <li class="nav-link grow"><a href="#contact" class="grow">Contact</a></li>
             </ul>
 
-            
-            </nav>
-<!-- HERO SECTION -->
-    <header>              
-        <div class="frontpage-container headline" data-aos="fade-down">
-            <div class="front-wrapper">
-                <h1 class="tagline">Moi, I'm <span class="name">Michele Zucca</span></h1>
-                <h2 class="punchline">Front-End Web Developer</h2>
-                <ul class="social punchline2">
-                    <li><a href="https://www.linkedin.com/in/michele-zucca/"><i class="fab fa-linkedin fa-3x grow"></i></a></li>
-                    <li><a href="https://github.com/micahsuomi"><i class="fab fa-github fa-3x grow"></i></a></li>
-                    <li><a href="https://www.facebook.com/michele.zucca.18"><i class="fab fa-facebook fa-3x grow"></i></a></li>
-                    <li><a href="https://www.instagram.com/mikibrightcrypto/?hl=en"><i class="fab fa-instagram fa-3x grow"></i></a></li>
-                 </ul>
-                 <a href="#about"><i class="fas fa-arrow-circle-down fa-3x hide-mobile punchline3"></i></a>
-             </div>
-    </div>
-
-    <!-- About -->
-    <div class="about-container headline" id="about">
-
-        <div class="about-wrapper">
-            
-            <div class="about-text" data-aos="fade-right">
-                <h2 class="tagline">About Me</h2>
-                <p class="punchline">
-                    I'm a native Italian, and I have been living in Helsinki for about 5 years. I have a strong international background and lived, worked and traveled in 3 countries. I've been mostly studying web development through self-studies and online courses, but I also attend meetups with other developers during events or clubs. 
-                         <br>
-                <br>
-                My focus at the moment is on front-end development. I aim to create beautiful, responsive and user-friendly web pages, and I pay a lot of attention to UI and prototyping. I usually build everything from scratch rendering a page more unique and customized.
-                <br>
-                <br>
-                I have a background in art and design (also self-taught) and in business administration. I love working with designs, colors and contrast, whitespaces, font-sizes. It just feels natural to me. I'm now focusing on React and modern JavaScript. When I'm not coding, I'm into UI Design, painting, digital illustrations and photography.</p>
             </div>
-            <div class="about-image tagline" data-aos="fade-left">
-            </div>
-        </div>
-
-        </div>
-
-        <div class="about-container2">
-        <div class="about-wrapper2 headline">      
-            <div class="about-wrapper2-nested" data-aos="flip-right">
-                <div class="view-icon">
-                        <i class="fas fa-edit fa-4x tagline" class="first"></i>                    
+        </header>
+        <main>
+            <!-- About -->
+            <div class="about-container headline" id="about">
+                <div class="about-wrapper">
+                    <div class="about-text" data-aos="fade-left">
+                        <h2 class="tagline">About Me</h2>
+                        <p class="punchline"> I'm a self-thought Front-End developer currently studying Full-Stack Development at Integrify Academy in Helsinki.
+                            <br>
+                            <br> I focus on responsive and user-friendly design, UI and prototyping. My stack of choice is currently React. When I'm not coding, I'm into UI/UX Design, painting, digital illustrations and photography.
+                            <br> </p>
                     </div>
-                   <div>
-                       <h4 class="punchline">UI Design Focus</h4>
-                    <p class="punchline">With a strong background in art and design, I have an excellent understanding and an eye for composition, layouts, fonts and whitespaces, creating beautiful looking UI's.</p>
-                </div> 
-            </div>
-        <div class="about-wrapper2-nested" data-aos="flip-right">
-                <div class="view-icon">
-                        <i class="fas fa-mobile-alt fa-4x tagline"></i>             
-                       </div>
-                   <div>
-                       <h4 class="punchline">Responsive</h4>
-                    <p class="punchline">I strive to create webpages that look great on desktop, tablet and mobile. I pay a lot of attention on the site's responsiveness and have a keen eye for detail. Playing with media queries is my favourite sport.</p></div> 
-            </div>
-        
-            <div class="about-wrapper2-nested" data-aos="flip-right">
-                <div class="view-icon">
-                        <i class="fas fa-running fa-4x tagline"></i></i>
-                </div>
-                   <div>
-                       <h4 class="punchline">Quick Learner, Self Starter</h4>
-                    <p class="punchline">NEVER STOP LEARNING, this is my way of life. I've been surprised to see how far I've been able to go in a short time, since I started with web development. You'd be surprised too. </p>
-                </div> 
-            </div>
-        
-        <div class="about-wrapper2-nested" data-aos="flip-right">
-                <div class="view-icon">
-                        <i class="fas fa-code fa-4x tagline"></i></div>
-                   <div>
-                       <h4 class="punchline">Customized</h4>
-                    <p class="punchline">As much as I understand the usability of CSS libraries and frameworks, I try to build everything from scratch, to develop a more personal design style on my web pages.</p>
-                </div> 
-            
-        </div>
-    </div>
-</div>
-    
-    <!-- Portfolio -->
-    <div class="portfolio-container headline" id="portfolio" data-aos="fade-right">
-            <h2><span class="port-header">Portfo</span>lio Work</h2>
-
-        <div class="portfolio-type-wrapper">
-        <div class="portfolio-type-btn-container">
-            <button class="btn-portfolio-type" id="html-btn">HTML, CSS, JavaScript</button>
-            <button class="btn-portfolio-type" id="react-btn">React</button>
-
-        </div>
-
-        <div class="portfolio-wrapper" id="websites-projects">
-
-                <div class="website-card-container website-hide website grow tagline" id="solidify" data-aos="fade-left">
-                <img src="./assets/imgs/website1_2card.png" alt="">
-                   <div class="website_show websiteblur">
-                    <div class="website_show-display">
-                       <h4 class="websitename">Solidify <br> Website</h4>
-                       <div class="button-container">
-                        <button class="portfolio-btn grow"><a href="Solidify/templates/index.html">View Project</a>
-                        </button>
-                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Solidify" target="blank">View on Github</a></button>
-                    </div>
+                    <div class="about-image tagline" data-aos="fade-left">
+                        <div class="profile-1-image__container">&nbsp;</div>
+                        <div class="profile-2-image__container">&nbsp;</div>
+                        <div class="profile-3-image__container">&nbsp;</div>
                     </div>
                 </div>
-                 </div>
-        
-            <div class="website-card-container website-hide website grow tagline" id="noirflix" data-aos="fade-left">
-                    <img src="./assets/imgs/website2-card.png" alt="">
-                   <div class="website_show websiteblur">
-                    <div class="website_show-display">
-                       <h4 class="websitename">Noirflix <br> Website</h4>
-                       <div class="button-container">
-                        <button class="portfolio-btn grow"><a href="noirflix/templates/landing.html">View Project</a>
-                        </button>
-                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/noirflix" target="blank">View on Github</a></button>
+            </div>
+            <div class="about-container2">
+                <div class="about-wrapper2 headline">
+                    <div class="about-wrapper2-nested" data-aos="flip-right">
+                        <div class="view-icon"> <i class="fas fa-edit fa-4x tagline" class="first"></i> </div>
+                        <div>
+                            <h4 class="punchline">UI Design Focus</h4>
+                            <p class="punchline">With a strong background in art and design, I have an excellent understanding and an eye for composition, layouts, fonts and whitespaces, creating beautiful looking UI's.</p>
+                        </div>
                     </div>
+                    <div class="about-wrapper2-nested" data-aos="flip-right">
+                        <div class="view-icon"> <i class="fas fa-mobile-alt fa-4x tagline"></i> </div>
+                        <div>
+                            <h4 class="punchline">Responsive</h4>
+                            <p class="punchline">I strive to create webpages that look great on desktop, tablet and mobile. I pay a lot of attention on the site's responsiveness and have a keen eye for detail. Playing with media queries is my favourite sport.</p>
+                        </div>
+                    </div>
+                    <div class="about-wrapper2-nested" data-aos="flip-right">
+                        <div class="view-icon"> <i class="fas fa-running fa-4x tagline"></i></i>
+                        </div>
+                        <div>
+                            <h4 class="punchline">Quick Learner, Self Starter</h4>
+                            <p class="punchline">NEVER STOP LEARNING, this is my way of life. I've been surprised to see how far I've been able to go in a short time, since I started with web development. You'd be surprised too. </p>
+                        </div>
+                    </div>
+                    <div class="about-wrapper2-nested" data-aos="flip-right">
+                        <div class="view-icon"> <i class="fas fa-code fa-4x tagline"></i></div>
+                        <div>
+                            <h4 class="punchline">Customized</h4>
+                            <p class="punchline">As much as I understand the usability of CSS libraries and frameworks, I try to build everything from scratch, to develop a more personal design style on my web pages.</p>
+                        </div>
                     </div>
                 </div>
-                 </div>
-            
-
-                 <div class="website-card-container website-hide website grow tagline" id="evenflow" data-aos="fade-left">
-                        <img src="./assets/imgs/website3_2-card.png" alt="">
-                        <div class="website_show websiteblur">
-                         <div class="website_show-display">
-                            <h4 class="websitename">Evenflow <br> Website</h4>
-                            <div class="button-container">
-                             <button class="portfolio-btn grow"><a href="evenflow/templates/index.html">View Project</a>
-                             </button>
-                             <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/evenflow" target="blank">View on Github</a></button>
-                         </div>
-                         </div>
-                     </div>
-                      </div>
-                     
-                     <div class="website-card-container website-hide website grow tagline" id="sketch" data-aos="fade-left">
-                            <img src="./assets/imgs/website4-card.png" alt="">
+            </div>
+            <!-- Portfolio -->
+            <div class="portfolio-container headline" id="portfolio" data-aos="fade-right">
+                <h2><span class="port-header">Portfo</span>lio Work</h2>
+                <div class="portfolio-type-wrapper">
+                    <div class="portfolio-type-btn-container">
+                        <button class="btn-portfolio-type" id="html-btn">HTML, CSS, JavaScript</button>
+                        <button class="btn-portfolio-type" id="react-btn">React</button>
+                    </div>
+                    <div class="portfolio-wrapper" id="websites-projects">
+                        <div class="website-card-container website-hide website grow tagline" id="solidify" data-aos="fade-left"> <img src="./assets/imgs/website1_2card.png" alt="">
                             <div class="website_show websiteblur">
                                 <div class="website_show-display">
-                                <h4 class="websitename">Sketch Like a Pro <br> Landing Page</h4>
-                                <div class="button-container">
-                                 <button class="portfolio-btn grow"><a href="Sketch like a pro/templates/index.html">View Project</a>
-                                 </button>
-                                 <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Sketch%20like%20a%20pro" target="blank">View on Github</a></button>
-                             </div>
-                             </div>
-                         </div>
-                          </div>
-              
-
-                 <div class="website-card-container website-hide website grow tagline" id="eat" data-aos="fade-left">
-                        <img src="./assets/imgs/website5-card.png" alt="">
-                        <div class="website_show websiteblur">
-                            <div class="website_show-display">
-                            <h4 class="websitename">EAT.TASTE.TRY. <br> Landing Page</h4>
-                            <div class="button-container">
-                             <button class="portfolio-btn grow"><a href="eat.taste.try_Sass/pages/index.html">View Project</a>
-                             </button>
-                             <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/eat.taste.try_Sass" target="blank">View on Github</a></button>
+                                    <h4 class="websitename">Solidify <br> Website</h4>
+                                    <div class="button-container">
+                                        <button class="portfolio-btn grow"><a href="Solidify/templates/index.html">View Project</a> </button>
+                                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Solidify" target="blank">View on Github</a></button>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                         </div>
-                     </div>       
-            </div>
-
-            <div class="portfolio-wrapper-2" id="react-projects">
-                    <div class="website-card-container-2 website-hide website grow tagline hide" data-aos="fade-left" id="star">
-                            <img src="./assets/imgs/react_1-card.png" alt="">
+                        </div>
+                        <div class="website-card-container website-hide website grow tagline" id="noirflix" data-aos="fade-left"> <img src="./assets/imgs/website2-card.png" alt="">
                             <div class="website_show websiteblur">
                                 <div class="website_show-display">
-                                <h4 class="websitename">STAR WARS API DATA <br> React App</h4>
-                                <div class="button-container">
-                                 <button class="portfolio-btn grow"><a href="https://starwarsapis.netlify.com/" target="blank">View Project</a>
-                                 </button>
-                                 <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Star-Wars-APIs-React-App" target="blank">View on Github</a></button>
+                                    <h4 class="websitename">Noirflix <br> Website</h4>
+                                    <div class="button-container">
+                                        <button class="portfolio-btn grow"><a href="noirflix/templates/landing.html">View Project</a> </button>
+                                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/noirflix" target="blank">View on Github</a></button>
+                                    </div>
                                 </div>
-                             </div>
-                             </div>
-                         </div>
-                         <div class="website-card-container-2 website-hide website grow tagline hide" data-aos="fade-left" id="crypto">
-                            <img src="./assets/imgs/crypto.png" alt="">
+                            </div>
+                        </div>
+                        <div class="website-card-container website-hide website grow tagline" id="evenflow" data-aos="fade-left"> <img src="./assets/imgs/website3_2-card.png" alt="">
                             <div class="website_show websiteblur">
                                 <div class="website_show-display">
-                                <h4 class="websitename">Crypto Dashbord <br> React App</h4>
-                                <div class="button-container">
-                                    <h4 class="websitename">In Progress</h4>
-                                 <!-- <button class="portfolio-btn grow"><a href="star-wars-data/public/index.html">View Project</a>
-                                 </button>
-                                 <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Solidify">View on Github</a></button> -->
+                                    <h4 class="websitename">Evenflow <br> Website</h4>
+                                    <div class="button-container">
+                                        <button class="portfolio-btn grow"><a href="evenflow/templates/index.html">View Project</a> </button>
+                                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/evenflow" target="blank">View on Github</a></button>
+                                    </div>
                                 </div>
-                             </div>
-                             </div>
-                         </div>  
-                         <div></div>    
-                         <div></div>    
-                         <div></div>    
-
-            </div>
-        </div>
-    </div>
-    <!-- Skills -->
-    <div class="skills-container headline" id="skills">
-        <h1>Skills</h1>
-        <div class="skills-wrapper">
-        <div class="skills-wrapper1" data-aos="fade-right">
-            <h3 class="skills-headline-top tagline">Coding skills</h3>
-            <ul class="tagline">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Bootstrap</li>
-                <li>JavaScript (ES5, ES6)</li>
-                <li>Python</li>
-                <li>Sass</li>
-
-            </ul>
-
-            <h3 class="skills-headline-bottom tagline">Learning Now</h3>
-            <ul class="tagline">
-                <li>React JS</li>
-
-            </ul>
-
-        </div>
-
-        <div class="skills-wrapper2" data-aos="fade-left">
-            <h3 class="skills-headline-top tagline">Design Skills</h3>
-            <ul class="tagline">
-                <li class="test">Adobe XD</li>
-                <li>Photoshop</li>
-                <li>Krita</li>
-
-            </ul>
-
-            <h3 class="skills-headline-bottom skills-headline-bottom-2 tagline">Proficient With</h3>
-
-            <ul class="tagline">
-                    <li>Graphic Tablets</li>
-                    <li>Content Creation</li>
-                    <li>Storytelling</li>
-    
-                </ul>
-
-           
-        </div>
-    </div>
-</div>
-</div>
-</div>
-    <!-- Contact -->
-
-
-
- <div class="contact-container headline" data-aos="fade-left" id="contact">
-<h1>Contact</h1>
-
-<div class="contact-grid tagline">
-
-    <div class="contact-text" data-aos="flip-left">
-    <p>You can pop me an email at <a href="mailto:michele.zucca81@gmail.com" class="contact-link">michele.zucca81@gmail.com</a> or connect with me on<a href="https://www.linkedin.com/in/michele-zucca/" class="contact-link grow"><span class="highlight grow"> Linkedin</span></a>. I'm also on <a href="https://www.behance.net/michelezucca" class="contact-link">Behance</a> and <a href="https://www.artstation.com/michele_zucca" class="contact-link">Art Station. </a></p> <br>
-    <br>  
-    <p>If you have 5 minutes to spare, check out my art <a href="https://michelezucca.com/" class="contact-link"  target="_blank"><span class="highlight grow">website</span></a>.</p>
-    </div>
-<div class="cards" data-aos="flip-right">
-        <a href="https://michelezucca.com/" target="_blank"><img src="./assets/imgs/card3.png" class="card-img card-img1 grow" alt=""></a>
-        <a href="https://michelezucca.com/" target="_blank"><img src="./assets/imgs/card5.png" class="card-img card-img2 grow"alt=""></a>
-        <a href="https://michelezucca.com/" target="_blank"><img src="./assets/imgs/card4.png" class="card-img card-img3 grow"alt=""></a>
-    </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <button onclick="topFunction()" class="btn-info" id="myBtn" title ="Go to Top"><i class="fas fa-chevron-up"></i></button>
-
-    <footer>
-        <div class="dark-footer">
-            <div class="footer-grid">
-                <div class="nested-footer">
-                    <div><h4 class="footer-name">Michele Zucca</h4></div>
-                
-                <div class="social-footer">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/michele-zucca/"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/micahsuomi"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://www.facebook.com/michele.zucca.18"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/mikibrightcrypto/?hl=en"><i class="fab fa-instagram"></i></a></li>
-
-
-                    </ul>
-                </div>
+                            </div>
+                        </div>
+                        <div class="website-card-container website-hide website grow tagline" id="sketch" data-aos="fade-left"> <img src="./assets/imgs/website4-card.png" alt="">
+                            <div class="website_show websiteblur">
+                                <div class="website_show-display">
+                                    <h4 class="websitename">Sketch Like a Pro <br> Landing Page</h4>
+                                    <div class="button-container">
+                                        <button class="portfolio-btn grow"><a href="Sketch like a pro/templates/index.html">View Project</a> </button>
+                                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Sketch%20like%20a%20pro" target="blank">View on Github</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="website-card-container website-hide website grow tagline" id="eat" data-aos="fade-left"> <img src="./assets/imgs/website5-card.png" alt="">
+                            <div class="website_show websiteblur">
+                                <div class="website_show-display">
+                                    <h4 class="websitename">EAT.TASTE.TRY. <br> Landing Page</h4>
+                                    <div class="button-container">
+                                        <button class="portfolio-btn grow"><a href="eat.taste.try_Sass/pages/index.html">View Project</a> </button>
+                                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/eat.taste.try_Sass" target="blank">View on Github</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-wrapper-2" id="react-projects">
+                        <div class="website-card-container-2 website-hide website grow tagline hide" data-aos="fade-left" id="star"> <img src="./assets/imgs/react_1-card.png" alt="">
+                            <div class="website_show websiteblur">
+                                <div class="website_show-display">
+                                    <h4 class="websitename">STAR WARS API DATA <br> React App</h4>
+                                    <div class="button-container">
+                                        <button class="portfolio-btn grow"><a href="https://starwarsapis.netlify.com/" target="blank">View Project</a> </button>
+                                        <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Star-Wars-APIs-React-App" target="blank">View on Github</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="website-card-container-2 website-hide website grow tagline hide" data-aos="fade-left" id="crypto"> <img src="./assets/imgs/crypto.png" alt="">
+                            <div class="website_show websiteblur">
+                                <div class="website_show-display">
+                                    <h4 class="websitename">Crypto Dashbord <br> React App</h4>
+                                    <div class="button-container">
+                                        <h4 class="websitename">In Progress</h4>
+                                        <!-- <button class="portfolio-btn grow"><a href="star-wars-data/public/index.html">View Project</a> </button> <button class="portfolio-btn grow"><a href="https://github.com/micahsuomi/Portfolio-Page/tree/master/Solidify">View on Github</a></button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
+            <!-- Skills -->
+            <div class="skills-container headline" id="skills">
+                <h1>Skills</h1>
+                <div class="skills-wrapper">
+                    <div class="skills-wrapper1" data-aos="fade-right">
+                        <h3 class="skills-headline-top tagline">Coding skills</h3>
+                        <ul class="tagline">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript (ES5, ES6)</li>
+                            <li>Python</li>
+                            <li>Sass</li>
+                            <li>React JS</li>
+                        </ul>
+                    </div>
+                    <div class="skills-wrapper2" data-aos="fade-left">
+                        <h3 class="skills-headline-top tagline">Design Skills</h3>
+                        <ul class="tagline">
+                            <li class="test">Adobe XD</li>
+                            <li>Photoshop</li>
+                            <li>Krita</li>
+                        </ul>
+                        <h3 class="skills-headline-bottom skills-headline-bottom-2 tagline">Proficient With</h3>
+                        <ul class="tagline">
+                            <li>Graphic Tablets</li>
+                            <li>Content Creation</li>
+                            <li>Storytelling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact -->
+            <div class="contact-container headline" data-aos="fade-left" id="contact">
+                <h1>Contact</h1>
+                <div class="contact-grid tagline">
+                    <div class="contact-text" data-aos="flip-left">
+                        <p>You can pop me an email at <a href="mailto:michele.zucca81@gmail.com" class="contact-link">michele.zucca81@gmail.com</a> or connect with me on<a href="https://www.linkedin.com/in/michele-zucca/" class="contact-link grow"><span class="highlight grow"> Linkedin</span></a>. I'm also on <a href="https://www.behance.net/michelezucca" class="contact-link">Behance</a> and <a href="https://www.artstation.com/michele_zucca" class="contact-link">Art Station. </a></p>
+                        <br>
+                        <br>
+                        <p>If you have 5 minutes to spare, check out my art <a href="https://michelezucca.com/" class="contact-link" target="_blank"><span class="highlight grow">website</span></a>.</p>
+                    </div>
+                    <div class="cards" data-aos="flip-right">
+                        <a href="https://michelezucca.com/" target="_blank"><img src="./assets/imgs/card3.png" class="card-img card-img1 grow" alt=""></a>
+                        <a href="https://michelezucca.com/" target="_blank"><img src="./assets/imgs/card5.png" class="card-img card-img2 grow" alt=""></a>
+                        <a href="https://michelezucca.com/" target="_blank"><img src="./assets/imgs/card4.png" class="card-img card-img3 grow" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <button onclick="topFunction()" class="btn-info" id="myBtn" title="Go to Top"><i class="fas fa-chevron-up"></i></button>
+        </main>
+        <footer>
+            <div class="dark-footer">
+                <div class="footer-grid">
+                    <div class="nested-footer">
+                        <div>
+                            <h4 class="footer-name">Michele Zucca</h4></div>
+                        <div class="social-footer">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/michele-zucca/"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/micahsuomi"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://www.facebook.com/michele.zucca.18"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/mikibrightcrypto/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        </main>
+        </footer>
         </div>
-    </footer>
-</div>
-</div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js" integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="./scripts/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js" integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="./scripts/main.js"></script>
+
 </body>
+
 </html>
